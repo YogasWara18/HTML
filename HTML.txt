@@ -68,7 +68,67 @@ Tujuan peramban web ( Chrome, Edge, Firefox, Safari ) adalah untuk membaca dokum
 
 Peramban tidak menampilkan tag HTML, tetapi menggunakannya untuk menentukan cara menampilkan dokumen!
 
+
 " STRUKTUR HALAMAN HTML " 
 
+< html >
+
+< head >
+
+< title > Page title < / title >
+
+</ head >
+
+< body >
+
+< h1 > This is a heading < / h1 >
+
+< p > This is a paragraph. < / p >
+
+< p > This is another paragraph.< / p > 
+
+< / body >
+
+< / html >
+
+Catatan : Konten di dalam bagian < body > akan ditampilkan di browser. Konten di dalam elemen < title > akan ditampilkan di bilah judul browser atau di tab halaman.
+
+
+" HTML BASIC " 
+Dalam bab ini kami akan menunjukkan beberapa contoh HTML dasar.
+Jangan khawatir jika kami menggunakan tag yang belum anda pelajari.
+
+" DOKUMEN HTML "
+Semua dokumen HTML harus dimulai dengan deklarasi tipe dokumen : <!DOCTYPE html>.
+<!-- Semua dokumen HTML harus dimulai dengan deklarasi tipe dokumen -->
+<!DOCTYPE html> 
+
+<!-- Dokumen HTML itu sendiri dimulai dengan <html> dan diakhiri dengan </html> -->
+<html></html>
+
+<!-- Bagian yang terlihat dari dokumen HTML berada di antara <body> dan </body> -->
+ <body></body>
+
+
+ <!-- Deklarasi <!DOCTYPE> -->
+
+ <!-- Deklarasi tersebut <!DOCTYPE> mewakili jenis dokumen, dan membantu browser menampilkan halaman web dengan benar. -->
+
+ <!-- Itu hanya boleh muncul satu kali, di bagian atas halaman ( Sebelum tag HTML apa pun ). -->
+
+ <!-- Deklarasi <!DOCTYPE> tidak peka huruf besar/kecil -->
+
+ <!-- Deklarasai <!DOCTYPE> untuk HTML5 -->
+
+
+ <!-- JUDUL HTML <h1> -->
+<!-- Judul HTML didefenisikan dengan tag <h1> to <h6> -->
+<!-- <h1> mendefenisikan judul yang paling penting. <h6> mendefenisikan judul yang paling tidak penting. -->
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+<h6>This is heading 6</h6>
 
 
