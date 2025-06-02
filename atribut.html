@@ -1,12 +1,118 @@
 <!-- ATRIBUT HTML -->
 <!-- Atribut HTML menyediakan informasi tambahan tentang elemen HTML -->
 
-<!-- - Semua elemen HTML dapat memiliki ATRIBUT.
-     - Atribut menyediakan INFORMASI TAMBAHAN tentang elemen.
-     - Atribut selalu ditentukan di tag awal.
-     - Atribut biasanya datang dalam pasangan nama/nilai seperti: name="value"
+<!-- 
+- Semua elemen HTML dapat memiliki ATRIBUT.
+- Atribut menyediakan INFORMASI TAMBAHAN tentang elemen.
+- Atribut selalu ditentukan di tag awal.
+- Atribut biasanya datang dalam pasangan nama/nilai seperti: name="value"
 -->
+
 
 <!-- ATRIBUT HREF -->
 <!-- Tag ini <a> mendefinisikan hyperlink. href atribut menentukan URL halaman yang dituju oleh tautan tersebut : -->
 <a href="https://www.w3schools.com">Visit W3School</a>
+
+
+<!-- ATRBUT SRC -->
+<!-- Tag <img> ini digunakan untuk menyematkan gambar di halaman HTML. src atribut menentukan jalur ke gambar yang akan di tampilkan -->
+<img src="img_girl.jpg">
+<!-- 
+Ada dua cara untuk menentukan URL dalam src atribut : 
+
+1. URL ABSOLUT - Tautan ke gambar eksternal yang dihosting di situs web lain. Contoh : src="httpx://www.w3schools.com/images/img_girl.jpg"
+Catatan : Gambar eksternal mungkin memiliki hak cipta. jika anda tidak memperoleh izin untuk menggunakannya, Anda mungkin melanggar undang - undang hak cipta. Selain itu, Anda tidak dapat mengontrol gambar eksternal; gambar tersebut dapat dihapus atau diubah secara tiba - tiba.
+
+2. URL RELATIF - Tautan ke gambar yang dihosting di dalam situs web. Di sini, URL tidak menyertakan nama domain. jika URL dimulai tanpa garis miring, URL akan relatif terhadap halaman saat ini. Contoh : sc="img_girl.jpg". Jika URL dimulai dengan garis miring, URL akan relatif terhadap domain. Contoh: src="/images/img_gril.jpg".
+
+Note : Sebaiknya gunakan URL RELATIF. URL tersebut tidak akan rusak jika anda mengubah domain.
+-->
+
+
+<!-- ATRIBUT LEBAR ( width ) & TINGGI ( height ) -->
+<!-- Tag <img> juga harus berisi atribut width dan height, yang menentukan lebar dan tinggi gambar ( dalam piksel ): -->
+ <img src="img_girl.jpg" width="500" height="600">
+
+
+<!-- ATRIBUT alt -->
+<!-- Atribut yang diperlukan alt untuk <img> tag menentukan teks alternatif untuk gambar, jika gambar tersebut tidak dapat ditampilkan karena suatu alasan. Hal ini dapat disebabkan oleh koneksi yang lambat, atau kesalahan pada src atribut, atau jika pengguna menggunakan pembaca layar. -->
+<img src="img_girl.jpg" alt="Girl with a jacket">
+
+
+<!-- ATRIBUT style -->
+<!-- Atribut style digunakan untuk menambahkan gaya ke suatu elemen, seperti warna, font, ukuran, dan lainnya -->
+<p style="color:red;">This is a red paragraph.</p>
+
+
+<!-- ATRIBUT lang -->
+<!-- Anda harus selalu menyertakan lang atribut di dalam <html> tag, untuk menyatakan bahasa halaman web. Hal ini dimaksudkan untuk membantu mesin pencari dan browser. -->
+<!DOCTYPE html>
+<html lang="en">
+     <body>
+          ....
+     </body>
+</html>
+<!-- Kode negara juga dapat ditambahkan ke kode bahasa dalam lang atribut. Jadi, dua karakter pertama menentukan bahasa HTML, dan dua karakter terakhir menentukan negara. -->
+<!DOCTYPE html>
+<html lang="en-US">
+     <body>
+          ....
+     </body>
+</html>
+
+
+<!-- ATRIBUT title -->
+<!-- Atribut title mendefinisikan beberapa informasi tambahan tentang suatu elemen -->
+<!-- Nilai atribut judul akan ditampilkan sebagai keterangan alat saat Anda mengarahkan kursor ke elemen tersebut: -->
+<p title="I'm a tooltip">This is a paragraph</p>
+
+
+
+<!-- NOTE -->
+<!-- KAMI MENYARANKAN: SELALU MENGGUNAKAN ATRIBUT DENGAN HURUF KECIL -->
+<!--  
+Standar HTML tidak memerlukan nama atribut huruf kecil.
+
+Atribut judul ( dan semua atribut lainnya ) dapat ditulis dengan huruf besar atau kecil seperti title atau TITLE. 
+
+Namun, W3C merekomendasikan atribut huruf kecil dalam HTML, dan menuntut atribut huruf kecil untuk tipe dokumen yang lebih ketat seperti XHTML.
+-->
+
+<!-- KAMI SARANKAN: SELALU BERI TANDA KUTIP PADA NILAI DARI ATRIBUT -->
+<!--
+Standar HTML tidak memerlukan tanda kutip di sekitar nilai atribut.
+
+Namun, W3C merekomendasikan tanda kutip dalam HTML, dan menuntut tanda kutip untuk tipe dokumen yang lebih ketat seperti XHTML.
+-->
+
+<!-- bagus -->
+<a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+
+<!-- buruk -->
+<a href=https://www.w3schools.com/html/>Visit out HTML tutorial</a>
+
+<!-- Terkadang anda harus menggunakan tanda kutip. Contoh ini tidak akan menampilkan atribut judul dengan benar, karena mengandung spasi -->
+ <p title=Description of W3Schools>
+
+
+<!-- TANDA KUTIP TUNGGAL ATAU GANDA  -->
+ <!-- 
+Tanda kutip ganda di sekitar nilai atribut adalah yang paling umum dalam HTML, tetapi tanda kutip tunggal juga dapat digunakan.
+
+Dalam beberapa situasi, ketika nilai atribut itu sendiri berisi tanda kutip ganda, maka perlu menggunakan tanda kutip tunggal :
+ -->
+<p title='John "Shotgun" Nelson'></p>
+<!-- Atau sebaliknya  -->
+<p title="john 'Shotgun' Nelson"></p>
+
+<!-- RINGKASAN BAB -->
+<!-- 
+- Semua elemen HTML dapat memiliki atribut
+- Atribut href menentukan <a> URL halaman yang dituju tautan tersebut
+- Atribut src menentukan <img> jalur ke gambar yang akan ditampilkan 
+- Atribut width dan height memberikan <img> informasi ukuran untuk gambar
+- Atribut alt menyediakan <img> teks alternatif untuk gambar
+- Atribut style digunakan untuk menambahkan gaya ke suatu elemen, seperti warna, font, ukuran, dan lainnya
+- Atribut lang tag <html> mendeklarasikan bahasa halaman web 
+- Atribut title mendefenisikan beberapa informasi tambahan tentang suatu elemen
+-->
