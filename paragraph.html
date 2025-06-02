@@ -1,0 +1,86 @@
+<!-- PARAGRAPH HTML <p> -->
+<!-- Sebuah paragraph selalu dimulai pada baris baru dan biasanya berupa blok teks. -->
+<!-- Elemen HTML <p> mendefinisikan sebuah paragraph -->
+<!-- Sebuah paragraph selalu dimulai pada baris baru, dan browser secara otomatis menambahkan spasi ( margin ) sebelum dan sesudah paragraph. -->
+ <p>This is a paragraph</p>
+ <p>This is a another paragraph</p>
+
+
+<!-- DISPLAY PARAGRAPH ( TAMPILAN ) HTML -->
+<!--  
+Anda tidak dapat yakin bagaimana HTML akan ditampilkan. 
+
+Layar besar atau kecil, dan jendela yang diubah ukurannya akan menghasilkan hasil yang berbeda. 
+
+Dengan HTML, Anda tidak dapat mengubah tampilan dengan menambahkan spasi tambahan atau baris tambahan dalam kode HTML anda.
+
+Browser akan secara otomatis manghapus spasi dan baris tambahan apa pun saat halaman ditampilkan :
+-->
+<p>
+    This paragraph
+    contains a lot of lines 
+    in the source code,
+    but the browser
+    ignores it.
+</p>
+
+<p>
+    This paragraph
+    contains            a lot   af  spaces 
+    in the source   code,
+    but the         browser
+    ignores     it.
+</p>
+<!-- Hasilnya akan tetap dengan satu garis line teratur -->
+
+
+<!-- ATURAN HORIZONTAL HTML <hr> -->
+<!-- 
+Tag ini <hr> mendefinisikan pemisah tematik pada halaman HTML, dan paling sering ditampilkan sebagai aturan horizontal.
+
+Elemen ini <hr> digunakan untuk memisahkan konten ( atau menentukan perubahan ) di halaman HTML :
+-->
+<h1>This is a heading 1</h1>
+<p>This is some text.</p>
+<hr>
+<h2>This is a heading 2</h2>
+<p>This is some other text.</p>
+<hr>
+<!-- Tag tersebut <hr> adalah tag kosong, artinya tidak memiliki tag akhir -->
+
+
+<!-- PEMUTUSAN BARIS HTML -->
+<!-- Elemen HTML <br> mendefinisikan jeda baris. -->
+<!-- Gunakan <br> jika anda menginginkan jeda baris ( baris baru ) tanpa memulai paragraph -->
+<p>This is <br>a paragraph<br>with line breaks.</p>
+<!-- Tag tersebut <br> adalah tag kosong, artinya tidak memiliki tag akhir. -->
+
+
+<!-- MASALAH PUISI -->
+<!-- Puisi ini akan ditampilkan dalam satu baris : -->
+<p>
+    My Bonnie lies over the ocean.
+
+    My Bonnie lies over the sea.
+
+    My Bonnie lies over the ocean.
+
+    Oh, bring back my Bonnie to me.
+</p>
+
+
+<!-- SOLUSI - ELEMEN HTML <pre> -->
+<!-- 
+Elemen HTML <pre> mendefinisikan teks yang telah diformat sebelumnya. 
+
+Teks di dalam <pre> elemen ditampilkan dalam font dengan lebar tetap ( biasanya Courier ), dan mempertahankan spasi dan jeda baris:
+-->
+<pre>
+    My Bonnie lies over the ocean.
+
+    My Bonnie lies over the sea.
+
+    My Bonnie lies over the ocean.
+
+    Oh, bring back my Bonnie to me.
+</pre>
