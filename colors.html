@@ -101,6 +101,56 @@ rgba(255, 99, 71, 0)            rgba(255, 99, 71, 1)
 
      Misalnya, #ff0000 ditampilkan sebagai merah, karena merah ditetapkan ke nilai tertingginya ( ff ), dan dua lainnya ( hijau dan biru ) ditetapkan ke 00.
 
-     Contoh lain 
+     Contoh lain, #00ff00 ditampilkan sebagai hijau, karena hijau ditetapkan ke nilai tertingginya ( ff ), dan dua lainnya ( merah dan biru ) ditetapkan ke 00.
+    
+     Untuk menampilkan warna hitam, atur semua parameter warna ke 00, seperti ini: #000000.
 
+     Untuk menampilkan warna putih, atur semua parameter warna ke ff, seperti ini: #ffffff.
 -->
+
+<!-- NUANSA ABU - ABU -->
+<!-- Nuansa abu - abu sering kali didefenisikan menggunakan nilai yang sama untuk ketiga parameter : -->
+#404040         #686868         #a0a0a0 
+
+
+
+<!-- WARNA HTML HSL & HSLA -->
+<!-- HSL merupakan singkatan dari hue ( rona ), saturation ( saturasi ), dan lightness ( keceraha ).
+
+     Nilai warna HSLA merupakan perluasan dari HSL dengan saluran ALfa ( opasitas ).
+-->
+
+<!-- NILAI WARNA HSL -->
+<!-- Dalam HTML, Warna dapat ditentukan menggunakan rona, saturasi, kan kecerahan ( HSL ) dalam bentuk :
+ 
+     hsl ( rona, saturasi, kecerahan )
+
+    " RONA " adalah derajat pada roda warna dari 0 hingga 360. 0 adalah merah, 120 adalah hijau, dan 240 adalah biru.
+
+     Saturasi adalah nilai persentase. 0% berarti corak abu - abu, dan 100% merupakan warna penuh.
+
+     Kecerahan juga merupakan nilai persentase. 0% bewarna hitam, 100% bewarna putih. 
+-->
+hsl(0, 100%, 50%)           hsl(240, 100%, 50% )        hsl(70, 20%, 20%)
+
+
+<!-- SATURATION -->
+<!-- Saturasi dapat digambarkan sebagai intensitas warna.
+ 
+     100% adalah warna murni, tidak ada nuansa abu - abu.
+
+     50% adalah 50% abu - abu, tetapi anda masih dapat melihat warnanya.
+
+     0% sepenuhnya abu - abu; anda tidak dapat lagi melihat warnanya. 
+-->
+hsl(0, 100%, 60%)           hsl(100, 100%, 90%)         hsl(12, 12%, 12%)
+
+
+<!-- LIGHTNESS -->
+<!-- Tingkat kecerahan suatu warna dapt dijelaskan dengan seberapa banyak kecerahan yang ingin anda berikan pada warna tersebut, dimana 0% berarti tidak ada kecerahan ( hitam ), 50% berarti 50% kecerahan ( tidak gelap maupun terang ), dan 100% berarti kecerahan penuh ( putih ). -->
+hsl(0, 100%, 0%)            hsl(0, 100%, 100%)          hsl(99, 2%, 70%)
+
+
+<!-- NUANSA ABU - ABU -->
+<!-- Nuansa abu - abu sering kali ditentukan dengan mangatur rona dan saturasi ke angka 0, dan menyesuaikan kecerahan dari 0% hingga 100% untuk mendapatkan nuansa yang lebih gelap/lebih terang -->
+hsl(0, 0%, 20%)             hsl(0, 0%, 60%)             hsl(0, 0%, 20%)
