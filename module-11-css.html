@@ -71,4 +71,120 @@
     </body>
 </html>
 <!-- Lembar gaya eksternal dapat ditulis dalam editor teks apa pun. File tidak boleh berisi kode HTML apa pun, dan harus disimpan dengan ekstensi .CSS. -->
- 
+
+<!-- TAMPILAN FILE "styles.css" -->
+<!-- 
+
+body {
+    background-color: powderblue;
+}
+h1 {
+    color: blue;
+}
+p {
+    color: red;
+}
+
+Kiat : Degan lembar gaya eksternal, Anda dapat mengubah tampilan seluruh situs web dengan mengubah satu berkas!
+-->
+
+
+<!-- CSS COLORS FONTS & SIZES -->
+<!-- Disini, kami akan menunjukkan beberapa properti CSS yang umum digunakan. Anda akan mempelajari lebih lanjut nanti.
+     
+     Properti CSS color menentukan warna teks yang akan digunakan.
+
+     Properti CSS font-family mendefinisikan font yang akan digunakan.
+
+     Properti CSS font-size menentukan ukuran teks yang akan digunakan.
+
+     Contoh :
+     Penggunaan properti warna CSS font-family dan font-size:
+-->
+<!DOCTYPE html> 
+<html>
+    <head>
+        <style>
+            h1  {
+                color: blue;
+                font-family: Verdana;
+                font-size: 300%;
+                }
+            p   {
+                color: red;
+                font-family: courier;
+                font-size: 160%;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>This is a heading</h1>
+        <p>This is a paragraph</p>
+
+    </body>
+</html>
+
+
+<!-- CSS BORDER -->
+<!-- Properti CSS boder mendefinisikan batas di sektitar elemen HTML. -->
+<!-- Tip: Anda dapat menentukan batas untuk hampir semua elemen HTML. -->
+<!-- 
+Contoh Penggunaan properti boder CSS : 
+
+p {
+    border: 2px solid powderblue;
+}
+
+-->
+
+
+<!-- CSS PADDING -->
+<!-- Properti CSS padding mendefinisikan padding ( spasi ) antara teks dan batas.  -->
+<!-- 
+Contoh Penggunaan properti border dan padding CSS :
+
+p {
+    border: 2px solid powderblue;
+    padding: 30px;
+}
+
+-->
+
+
+<!-- CSS MARGIN -->
+<!-- Properti CSS margin mendefinisikan margin ( spasi ) diluar batas. -->
+<!-- 
+Contoh Penggunaan properti border dan margin CSS:
+
+P {
+    border: 2px solid powderblue;
+    margin: 50px;
+}
+
+-->
+
+
+<!-- LINK TO EXTERNAL CSS -->
+<!-- Lembar CSS eksternal dapat direferensikan dengan URL lengkap atau dengan jalur relatif ke halaman web saat ini. -->
+<!-- Contoh ini menggunakan URL lengkap untuk menautkan ke lembar gaya: -->
+<link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+<!-- Contoh ini terhubung ke lembar gaya yang terletak di folder HTML pada situs web saat ini : -->
+<link rel="stylesheet" href="/html/styles.css">
+<!-- Contoh ini tertaut ke lembar gaya yang terletak di folder yang sama dengan halaman saat ini : -->
+<link rel=" stylesheet" href="style.css">
+
+
+<!-- RINGKASAN BAB -->
+<!-- 
+    - Gunakan atribut HTML style untuk gaya sebaris 
+    - Gunakan elemen HTML <style> untuk menentukan CSS internal 
+    - Gunakan elemen HTML <link> untuk merujuk ke file CSS eksternal
+    - Gunakan elemen HTML <head> untuk menyimpan elemen <style> dan <link>
+    - Gunakan properti CSS color untuk warna teks 
+    - Gunakan properti CSS font-family untuk font teks
+    - Gunakan properti CSS font-size untuk ukuran teks
+    - Gunakan properti CSS border untuk batas
+    - Gunakan properti CSS padding untuk spasi di dalam perbatasan
+    - Gunakan properti CSS margin untuk spasi diluar batas
+-->
