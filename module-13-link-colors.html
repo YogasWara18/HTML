@@ -1,0 +1,75 @@
+<!-- HTML LINKS - DIFFERENT COLORS -->
+<!-- Link HTML ditampilkan dalam warna berbeda tergantung pada apakah link tersebut telah dikunjungi, belum dikunjungi, atau aktif. -->
+
+<!-- HTML LINK COLORS -->
+<!-- Secara Default, Link akan muncul seperti ini ( di semua browser ):
+
+     - Link yang belum dikunjungi diberi garis bawah dan bewarna biru.
+     - Link yang telah dikunjungi digarisbawahi dan bewarna ungu 
+     - Link aktif digarisbawahi dan bewarna merah.
+
+     Anda dapat mengubah warna status link dengan menggunakan CSS: 
+
+     Contoh : 
+     Disini, link yang belum dikunjungi akan bewarna hijau tanpa baris bawah. Link yang dikunjungi akan bewarna merah muda tanpa garis bawah. Link yang aktif akan bewarna kuning dan bergaris bawah. Selain itu, saat mengarahkan kursor ke link (a:hover), link akan berubah menjadi merah dan bergaris bawah.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            a:link {
+                color: green;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a:visited {
+                color: pink;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a:hover {
+                color: red;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+            a:active {
+                color: yellow;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <p>You can change the default colors of links</p>
+
+        <a href="html_images.asp" target="_blank">HTML Images</a>
+    </body>
+</html>
+
+
+
+<!-- LINK BUTTONS -->
+<!-- Sebuah link juga dapat diberi gaya seperti tombol, dengan menggunakan CSS: -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            a:link, a:visited {
+                background-color: #f44336;
+                color: white;
+                padding: 15px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+            a:hover, a:active {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Link Button</h2>
+        <p>A link styled as a button:</p>
+        <a href="default.asp" target="_blank">This is a button link</a>
+    </body>
+</html>
