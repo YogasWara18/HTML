@@ -1,0 +1,123 @@
+<!-- LINKS HTML -->
+<!-- Link ditemukan di hampir semua halaman web. Link memungkinkan pengguna untuk mengeklik dari satu halaman ke halaman lainnya. -->
+
+<!-- LINK HTML - HYPERLINK -->
+<!-- 
+     Link HTML adalah hyperlink.
+     
+     Anda dapat mengeklik link dan melompat ke dokumen lain.
+
+     Saat anda menggerakkan mouse pada suatu link, panah mouse akan berubah menjadi tangan kecil.
+
+     Catatan : Link tidak harus berupa teks. Link dapat berupa gambar atau elemen HTML lainnya!
+-->
+
+
+<!-- LINK HTML - SYNTAX -->
+<!-- Tag HTML <a> mendefinisikan hyperlink. Tag ini memiliki syntax sebagai berikut : -->
+<a href="url">Link text</a>
+<br>
+
+<!-- Atribut yang paling penting dari elemen <a> adalah href atribut, yang menunjukkan tujuan link.
+    
+     Teks link adalah bagian yang akan terlihat oleh pembaca.
+
+     Mengklik teks link akan mengarahkan pembaca ke alamat URL yang ditentukan .
+
+     Contoh ini menunjukkan cara membuat link ke W3Schools.com :
+-->
+<a href="https://www.w3schools.com">Visit W3Schools.com!</a>
+<br>
+
+<!-- 
+    Secara default, link akan muncul seperti berikut di semua browser :
+
+    - Link yang belum dikunjungi diberi garis bawah dan bewarna biru
+    - Link yang telah dikunjungi digarisbawahi dan bewarna ungu
+    - Link aktif digaris bawahi dan bewarna merah
+
+    Tip: Link tentu saja dapat diberi gaya dengan CSS, untuk mendapatkan tampilan lain !
+-->
+
+
+<!-- LINK HTML - ATRIBUT TARGET -->
+<!-- Secara default, halaman yang ditautkan akan ditampilkan di jendela browser saat ini. Untuk mengubahnya, anda harus menentukan target lain untuk tautan tersebut.
+
+     Atribut target menentukan tempat membuka dokumen yang ditautkan. 
+
+     Atribut target dapat memiliki salah satu nilai berikut :
+
+     - _self - Default. Membuka dokumen di jendela/tab yang sama saat diklik
+     - _blank - Membuka dokumen di jendela atau tab baru
+     - _parent - Membuka dokumen di bingkai induk
+     - _top - Membuka dokumen di badan penuh jendela
+
+     Contoh :
+     Gunakan target="_blank" untuk membuka dokumen link di jendela atau tab browser baru :
+-->
+<a href="https://www.w3schools.com/" target="_blank">Link target _blank!</a>
+<br>
+
+
+<!-- ABSOLUTE URLs & RELATIVE URLs -->
+<!-- Kedua contoh di atas menggunakan URL Absolute ( alamat web lengkap ) dalam href atribut.
+ 
+     Link lokal ( tautan ke halaman dalam situs web yang sama ) ditentukan dengan URL Relatif ( tanpa bagian "https://www"):
+
+     Contoh : 
+-->
+<h2>Absolute URLs</h2>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.goolge.com/">Google</a></p>
+<br>
+
+<h2>Relative URLs</h2>
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p>
+<br>
+
+
+<!-- LINK HTML - GUNAKAN GAMBAR SEBAGAI LINK -->
+<!-- Untuk menggunakan gambar sebagai link, cukup masukkan <img> tag di dalam <a> tag : -->
+<a href="default.asp">
+    <img src="smiley.gif" alt="HTML Tutorial" style="width:42px;height:42px;">
+</a>
+<br>
+
+
+<!-- LINK KE ALAMAT EMAIL -->
+<!-- Gunakan mailto: di dalam href atribut untuk membuat link yang mebuka program email pengguna ( agar mereka dapat mengirim email baru ): -->
+<a href="mailto:someone@example.com">Link Email</a>
+<br>
+
+<!-- TOMBOL SEBAGAI LINK -->
+<!-- Untuk menggunakan tombol HTML sebagai link, Anda harus menambahkan beberapa kode JavaScript.
+     JavaScript memungkinkan anda menentukan apa yang terjadi pada peristiwa tertentu, seperti mengklik tombol :
+-->
+<button onclick="document.location='default.asp'">Link Button</button>
+<br>
+
+<!-- LINK TITLE -->
+<!-- Atribut ini title menentukan informasi tambahan tentang suatu elemen. Informasi ini paling sering ditampilkan sebagai teks keterangan alat saat mouse bergerak di atas elemen tersebut. -->
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our LINK TITLE</a> 
+<br>
+
+<!-- LEBIH LANJUT TENTANG URL ABSOLUT & URL RELATIVE -->
+<a href="https://www.w3schools.com/html/default.asp">HTML LINK ABSOLUTE & RELATIVE</a>
+<br>
+
+<!-- Contoh : Link ke halaman yang terletak di folder html di situs web saat ini : -->
+<a href="/html/default.asp">HTML Tutorial Link yang didalam document HTML </a>
+<br>
+
+<!-- Contoh : Link ke halaman yang terletak di folder yang sama dengan halaman saat ini : -->
+<a href="default.asp">Link di folder yang sama</a>
+
+<!-- RINGKASAN BAB -->
+<!-- 
+     - Gunakan <a> elemen untuk menentukan link.
+     - Gunakan href atribut untuk menentukan alamat link.
+     - Gunakan target atribut untuk menentukan tempat membuka dokumen link.
+     - Gunakan <img> elemen ( di dalam <a> ) untuk menggunakan gambar sebagai link.
+     - Gunakan mailto: skema di dalam href atribut untuk membuat link yang membuka program email pengguna.
+-->
