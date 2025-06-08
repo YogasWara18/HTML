@@ -1,0 +1,133 @@
+<!-- HTML IMAGES -->
+<!-- Gambar dapat meningkatkan desain dan tampilan halaman web -->
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>HTML Image</h2>
+        <img src="pic_trulli.jpg" alt="Trulli" width="500" height="333">
+    </body>
+</html>
+
+
+<!-- SYNTAX GAMBAR HTML -->
+<!-- Tag HTML <img> digunakan untuk menanamkan gambar di halaman web.
+    
+     Secara teknis, gambar tidak dimasukkan ke dalam halaman web; gambar ditautkan ke halaman web. <img> tag tersebut menciptakan ruang penyimpanan untuk gambar yang dirujuk.
+
+     Tag tersebut <img> kosong, hanya berisi atribut dan tidak memiliki tag penutup.
+
+     Tag <img> memiliki dua atribut yang diperlukan :
+     - src = Menentukan jalur ke gambar
+     - alt = Menentukan teks alternatif untuk gambar
+-->
+<!-- Syntax Image -->
+<img src="url" alt="alternatetext">
+
+
+<!-- ATRIBUT SRC -->
+<!-- Atribut yang diperlukan src menentukan jalur ( URL ) ke gambar. 
+
+    Catatan : Saat halaman web dimuat, pada saat itulah browser mengambil gambar dari server web dan memasukkannya ke dalam halaman. oleh karena itu, pastikan gambar benar - benar berada di tempat yang sama dalam kaitannya dengan halaman web, jika tidak, pengunjung anda akan mendapatkan ikon tautan rusak. Ikon rusak dan alt teks akan ditampilkan jika browser tidak dapat menemukan gambar tersebut.
+-->
+<!DOCTYPE html> 
+<html>
+    <body>
+        <h2>Alternative text</h2>
+
+        <p>The alt attribute should reflect the image content, so users who cannot see the image get an understanding of what the image contains:</p>
+
+        <img src="img_chania.jpg" alt="Flowers in chania" width="460" height="345">
+    </body>
+</html>
+
+
+<!-- ATRIBUT ALT -->
+<!-- Atribut yang diperlukan alt menyediakan teks alternatif untuk gambar, jika pengguna karena alasan tertentu tidak dapat melihatnya ( karena koneksi yang lambat, kesalahan pada atribut src, atau jika pengguna menggunakan pembaca layar ). 
+
+    Nilai alt atribut harus menjelaskan gambar :
+-->
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Alternative text</h2>
+        <p>The alt attribute should reflect the image content</p>
+
+        <img src="img_chania.jpg" alt="flowers in Jepang" width="460" height="345">
+    </body>
+</html>
+<!-- Jika browser tidak menemukan gambar maka browser akan menampilkan nilai text alt pada gambar -->
+
+
+<!-- IMAGE SIZE - WIDTH & HEIGHT -->
+<!-- Anda dapat menggunakan style atribut untuk menentukan lebar dan tinggi gambar. -->
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Image size</h2>
+        <p>Here we use the style attribute to specify the width and height of an image:</p>
+
+        <img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+    </body>
+</html>
+<!-- Sebagai alternatif, anda dapat menggunakan atribut width dan height : -->
+<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+<!-- Atribut width dan height selalu menentukan lebar dan tinggi gambar dalam piksel -->
+<!-- CATATAN : Selalu tentukan lebar dan tinggi gambar. jika lebar dan tinggi tidak ditentukan, halaman web mungkin berkedip saat gambar dimuat. -->
+
+
+<!-- LEBAR ( WIDTH ) & TINGGI ( HEIGHT ) atau GAYA ( STYLE ) -->
+<!-- Atribut width, height, dan style semuanya valid dalam HTML. 
+     
+     Namun, kami sarankan untuk menggunakan style atribut ini. Atribut ini mencegah lembar gaya mengubah ukuran gambar :
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* Style ini untuk mengatur lebar semua gambar menjadi 100% */
+            img {
+                width: 100%
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Width/Height Attributes or style?</h2>
+        <p>Gambar pertama menggunakan atribut lebar ( diatur ke 128 piksel ), tetapi gaya di bagian head menimpanya dan menyetel lebar ke 100%</p>
+        <img src="html5.gif" alt="Icon HTML" width="128" tinggi="128">
+
+        <p>Gambar kedua menggunakan atribut style untuk mengatur lebar menjadi 128 piksel, ini tidak akan ditimpa oleh gaya di bagian head</p>
+        <img src="html5.gif" alt="Icon HTML5" style="width:128px;height:128px;">
+    </body>
+</html>
+
+
+<!-- GAMBAR DI FOLDER LAIN -->
+<!-- Jika anda memiliki gambar di sub - folder, anda harus menyertakan nama folder dalam src atribut: -->
+<img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+
+<!-- GAMBAR DI SERVER/SITUS WEB LAIN -->
+<!-- Beberapa situs web menunjukkan ke gambar di server lain. 
+
+     Untuk menunjukkan ke gambar di server lain, Anda harus menentukan URL absolut ( lengkap ) dalam src atribut :
+-->
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3schools.com">
+<!-- Catatan tentang gambar eksternal : Gambar eksternal mungkin memiliki hak cipta. jika anda tidak memperoleh izin untuk menggunakannya, anda mungkin melanggar undang - undang hak cipta. -->
+
+
+<!-- GAMBAR ANIMASI -->
+<img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
+
+
+<!-- GAMBAR SEBAGAI TAUTAN -->
+<!-- Untuk menggunakan gambar sebagai tautan, letakkan <img> tag didalam <a> tag: -->
+<a href="default.asp">
+    <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+
+<!-- GAMBAR MENGAMBANG -->
+<!-- Gunakan properti CSS float untuk membiarkan gambar melayang ke kanan atau ke kiri teks -->
+ <p><img src="smiley.gif" alt="smiley face" style="float:right;width:42px;height:42px;">The image will float to the right the text.</p>
+
+ <p><img src="smiley.gif" alt="smiley face" style="float:left;width:42px;height:42px;">The image will float to the left of the text.</p>
