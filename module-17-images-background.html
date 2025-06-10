@@ -64,3 +64,50 @@
     <p>Secara default, gambar latar belakang akan berulang jika lebih kecil dari elemen tempat gambar tersebut ditentukan, dalam hal ini elemen body.</p>
 </body>
 </html>
+
+
+
+<!-- BACKGROUND BERULANG -->
+<!-- Jika background lebih kecil dari elemen, gambar akan berulang, secara horizontal dan vertikal, hingga mencapai akhir elemen. -->
+<style>
+    body {
+        background-image:url('example_oimg_gril.jpg');
+    }
+</style>
+<!-- Untuk mencegah background terulang kembali, atur background - repeat properti ke no - repeat. -->
+<style>
+    body {
+        background-image:url('example_img_gril.jpg');
+        background-repeat: no-repeat;
+    }
+</style>
+
+
+
+<!-- BACKGROUND COVER -->
+<!-- Jika anda ingin background menutupi seluruh elemen, Anda dapat mengatur background-size properti ke cover. 
+
+     Selain itu, untuk memastikan seluruh elemen selalu tercakup, atur background-attachment properti ke fixed.
+
+     Dengan cara ini, gambar background akan menutupi seluruh elemen, tanpa peregangan ( gambar akan mempertahankan proporsi aslinya )
+-->
+<style>
+    body {
+        background-image:url('Example.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
+
+
+<!-- BACKGROUND STRETCH -->
+<!-- Jika anda ingin background meregang agar sesuai dengan seluruh elemen, Anda daoat mengatur background-size properti menjadi 100% 100%: -->
+<style>
+    body {
+        background-image:url('Example.jpg');
+        background-repeat: no repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+</style>
