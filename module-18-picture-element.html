@@ -1,0 +1,73 @@
+<!-- HTML <picture> ELEMENT -->
+<!-- Elemen HTML <picture> memungkinkan anda menampilkan gambar yang berbeda untuk perangkat atau ukuran layar yang berbeda. -->
+
+<!-- ELEMEN HTML <picture> -->
+<!-- Elemen HTML <picture> memberi pengembang web lebih banyak fleksibilitas dalam menentukan sumber daya gambar.
+
+     Elemen tersebut <picture> berisi satu atau beberapa <source> elemen, yang masing - masing merujuk ke gambar yang berbeda melalui srcset atribut. Degan cara ini, browser dapat memilih gambar yang paling sesuai dengan tampilan dan / atau perangkat saat ini .
+
+     Setiap <source> elemen memiliki media atribut yang menentukan kapan gambar paling cocok.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>The picture Elemen</h2>
+
+        <pictue>
+            <source media="(min-width: 650px)" srcset="image.jpg">
+            <source media="(min-width: 465px)" srcset="computer.jpg">
+            <img src="image/image-1.jpg" style="width:600px;">
+        </pictue>
+
+        <p>Elemen picture dalam HTML digunakan untuk memberikan fleksibilitas dalam menampilkan gambar berdasarkan kondisi tertentu, seperti ukuran layar atau format gambar yang didukung oleh browser. Ini memungkinkan pengembang untuk menyediakan berbagai sumber gambar dan memberikan pengalaman yang lebih optimal kepada pengguna.</p> <br>
+        <p>'source' : Digunakan untuk menentukan alternatif gambar berdasarkan kondisi tertentu, seperti lebar layar atau format gambar (WebP,PNG,dll.)</p> <br>
+        <p>'media' : Menentukan kapan sumber gambar harus digunakan berdasarkan aturan media query.</p> <br>
+        <p>'srcset' : Menyediakan jalur gambar alternatif.</p> <br>
+        <p>'img' : Menjadi fallback jika tidak ada kondisi 'source' yang sesuai dengan perangkat pengguna. </p>
+        <p>Dengan elemen 'picture', kita bisa meningkatkan efesiensi pemuatan gambar dan memastikan tampilan yang optimal di berbagai perangkat</p>
+    </body>
+</html>
+
+
+
+<!-- CARA PENGGUNAAN ELEMEN <picture> DALAM PROYEK WEB -->
+<!-- Berikut contoh penggunaan elemen <picture> dalam proyek web yang mengoptimalkan gambar berdasarkan ukuran layar dan format yang didukung : -->
+
+<!-- 1. Menyesuaikan Gambar untuk berbagai perangkat -->
+<!-- Jika kamu ingin menampilkan gambar yang berbeda berdasarkan ukuran layar, kamu bisa menggunakan elemen <picture> seperti ini : -->
+<picture>
+    <source srcset="gambar-mobile.webp" type="image/webp" media="(max-width: 600px)">
+    <source srcset="gambar-dekstop.webp" type="image/webp" media="min-width: 601px">
+    <img src="gambar-standar.jpg" alt="Deskripsi gambar">
+</picture>
+<!-- Browser akan memilih gambar sesuai kondisi media query ( media ) di media web, mobile -->
+<!-- Format WebP digunakan untuk efesiensi ukuran file. Tetapi jika tidak didukung, gambar standar dari elemen <img> akan ditampilkan. -->
+
+<!-- 2. Menampilkan gambar Resolusi Tinggi untuk layar Retina -->
+<!-- Jika proyek web ingin mendukung layar dengan kepadatan piksel tinggi, gunakan atribut srcset: -->
+<picture>
+    <source srcset="gambar-retina.jpg" media="(min-resolution: 2dppx)">
+    <img src="gambar-normal.jpg" alt="Gambar resolusi normal">
+</picture>
+<!-- Manfaat :
+    
+    - Mengoptimalkan kualitas gambar untuk perangkat seperti MacBook retina atau smartphone high - end tanpa membebani perangkat biasa. 
+-->
+
+<!-- 3. Alternatif Format Gambar (WebP, PNG, JPEG) -->
+<!-- Jika kamu ingin menggunakan format gambar yang lebih ringan tetapi tetap memiliki cadangan untuk browser yang tidak mendukungnya : -->
+<picture>
+    <source srcset="gambar.webp" type="image/webp">
+    <source srcset="gambar.png" type="image/png">
+    <img src="gambar.jpg" alt="Gambar fallback">
+</picture>
+<!-- Keunggulan 
+
+    - WebP lebih ringan dan berkualitas tinggi dibanding PNG atau JPEG.
+    - Browser yang tidak mendukung Webp akan menggunakan format lain yang tersedia.
+
+    Penggunaan elemen <picture. ini sangat berguna dalam proyek web modern, terutama untuk menningkatkan peforma situs dengan pengalaman pengguna.
+-->
