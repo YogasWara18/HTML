@@ -1,0 +1,93 @@
+<!-- HEADER TABEL HTML -->
+<!-- Tabel HTML dapat memiliki tajuk untuk setiap kolom atau baris, atau untuk banyak kolom / baris . -->
+
+<!-- HEADER TABEL HTML -->
+<!-- Header tabel didefinisikan dengan th elemen. Setiap th elemen mewakili sel tabel. -->
+<table>
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+</table>
+
+
+<!-- HEADER TABEL VERTIKAL -->
+<!-- Untuk menggunakan kolom pertama sebagai tajuk tabel, tentukan sel pertama di setiap baris sebagai <th> elemen : -->
+<table>
+    <tr>
+        <th>Firstname</th>
+        <td>Jill</td>
+        <td>Eve</td>
+    </tr>
+    <tr>
+        <th>Lastname</th>
+        <td>Smith</td>
+        <td>Jackson</td>
+    </tr>
+    <tr>
+        <th>Age</th>
+        <td>94</td>
+        <td>50</td>
+    </tr>
+</table>
+
+
+<!-- SEJAJARKAN HEADER TABEL -->
+<!-- Secara default, tajuk tabel dicetak tebal dan ditengah  -->
+<!-- Untuk meratakan tajuk tabel ke kiri, gunakan text-align properti CSS : -->
+th {
+    text-align: left;
+}
+
+
+<!-- HEADER UNTUK BEBERAPA KOLOM <colspan> -->
+<!-- Anda dapat memiliki tajuk yang mencakup dua kolom atau lebih  -->
+<!-- Untuk melakukan ini, gunakan colspan atribut pada <th> elemen: -->
+<table>
+    <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+</table>
+
+
+<!-- TABLE CAPTION <caption> -->
+<!-- Anda dapat menambahkan keterangan yang berfungsi sebagai tajuk untuk keseluruhan tabel . -->
+<!-- Untuk menambahkan judul pada tabel, gunakan <caption> tag : -->
+<table style="width:100%">
+    <caption>Monthly savings</caption>
+    <tr>
+        <th>Month</th>
+        <th>Savings</th>
+    </tr>
+    <tr>
+        <td>January</td>
+        <td>$100</td>
+    </tr>
+    <tr>
+        <td>February</td>
+        <td>$50</td>
+    </tr>
+</table>
+<!-- CATATAN : Tag <caption> harus disisipkan segera setelah <table> tag. -->
