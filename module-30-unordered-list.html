@@ -29,3 +29,103 @@
     - square : Menampilkan kotak (▪).    
     - none : Menghilangkan penanda daftar.
     -->
+
+<!-- DISC ( • ) -->
+<ul style="list-style-type:disc;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ul>
+
+<!-- CIRCLE ( ○ ) -->
+<ul style="list-style-type:circle;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ul>
+
+<!-- SQUARE ( ▪ ) -->
+<ul style="list-style-type:square;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ul>
+
+<!-- NONE ( menghilangkan penanda daftar ) -->
+<ul style="list-style-type:none;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ul>
+
+
+<!-- DAFTAR HTML BERSARANG -->
+<!-- Daftar dapat disarangkan ( daftar di dalam daftar ) -->
+<ul>
+    <li>Coffee</li>
+    <li>Tea
+        <ul>
+            <li>Black tea</li>
+            <li>Green tea</li>
+        </ul>
+    </li>
+    <li>Milk</li>
+</ul>
+<!-- Catatan : Item daftar ( <li> ) dapat berisi daftar baru, dan elemen HTML lainnya, seperti gambar dan tautan, dll. -->
+
+
+<!-- DAFTAR HORIZONTAL DENGAN CSS  -->
+<!-- Daftar HTML dapar diberi gaya dalam banyak cara berbeda dengan CSS.
+     
+     Salah satu cara yang populer adalah dengan menata daftar secara horizontal, untuk membuat menu navigasi :
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333333;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 16px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                background-color: #111111;
+            }
+        </style>
+    </head>
+    <body>
+
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#news">NEWS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#about">ABOUT</a></li>
+        </ul>
+    </body>
+</html>
+
+
+<!-- RINGKASAN BAB -->
+<!-- 
+    - Gunakan elemen HTML <ul> untuk menentukan daftar yang tidak berurutan.
+    - Gunakan list-style-tyoe properti CSS menentukan penanda item daftar 
+    - Gunakan elemen HTML <li> untuk menentukan item daftar.
+    - Daftar dapat disarangkan.
+    - Item daftar dapat berisi elemen HTML lainnya.
+    - Gunakan properti CSS float:left untuk menampilkan daftar secara horizontal.
+-->
