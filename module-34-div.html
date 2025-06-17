@@ -1,0 +1,103 @@
+<!-- HTML div ELEMENT ( pembagian ) -->
+<!-- Elemen ini <div> digunakan sebagai wadah untuk elemen HTML lainnya. -->
+
+<!-- ELEMENT <div> -->
+<!-- Elemen tersebut <div> secara default merupakan elemen blok, artinya ia mengambil semua lebar yang tersedia, dan disertai jeda baris sebelum dan sesudahnya. -->
+<!-- Contoh  -->
+<!-- Elemen <div> mengambil semua lebar yang tersedia -->
+lorem Ipsum <div>I am a div</div> dolor sit amet.
+
+<!-- <div> SEBAGAI WADAH -->
+<!-- Elemen ini <div> sering digunakan untuk mengelompokkan bagian - bagian halaman web bersama - sama. -->
+<div>
+    <h2>London</h2>
+    <p>London is the capital city of england.</p>
+    <p>London has over 9 million inhabitants</p>
+</div>
+
+<!-- RATAKAN TENGAH ELEMEN <div> -->
+<!-- Jika anda memiliki <div> elemen yang lebarnya tidak 100%, dan anda ingin meratakannya ke tengah, atur margin properti CSS ke auto. -->
+<style>
+    div {
+        width: 300px;
+        margin: auto;
+    }
+</style>
+
+<!-- BEBERAPA ELEMEN <di> -->
+<!-- Anda dapat memiliki banyak <div> wadah pada halaman yang sama. -->
+<div>
+    <h2>London</h2>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+</div>
+
+<div>
+    <h2>England</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum.</p>
+</div>
+
+<div>
+    <h2>Tokyo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, aut.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, minima consequuntur!</p>
+</div>
+
+
+<!-- Menyelaraskan elemen <div> berdampingan -->
+<!-- Saat membangun halaman web, Anda sering kali ingin memiliki dua atau lebih <div> elemen yang berdampingan, seperti ini : -->
+<!-- Ada beberapa metode untuk menyelaraskan elemen berdampingan, semuanya mnyertakan beberapa gaya CSS. kita akan melihat metode yang paling umum : -->
+
+<!-- FLOAT ( mengambang ) -->
+<!-- Properti CSS float awalnya tidak dimaksudkan untuk menyelaraskan <div> elemen secara berdampingan, tetapi telah digunakna untuk tujuan ini selama bertahun - tahun .
+     Properti CSS float digunakan untuk memposisikan dan memformat konten dan memungkinkan elemen diposisikan secara horizontal, bukan vertikal.
+-->
+<style>
+    .mycontainer {
+        width: 100%;
+        overflow: auto;
+    }
+
+    .mycontainer div {
+        width: 33%;
+        float: left;
+    }
+</style>
+
+
+<!-- INLINE - BLOCK ( Blok sebaris ) -->
+<!-- JIka anda mengubah propeti <div> elemen display dari block menjadi inline-block, <div> elemen tidak akan lagi menambahkan jeda baris sebelum dan sesudahnya, dan akan ditampilkan berdampingan, bukan di atasa satu sama lain. -->
+<style>
+    div {
+        width: 30%;
+        display: inline-block;
+    }
+</style>
+
+
+<!-- FLEX ( melenturkan ) -->
+<!-- Modul tata letak CSS flexbox diperkenalkan untuk memudahkan perancangan struktur tata letak responsif yang fleksibel tanpa menggunakan float atau positioning. 
+     Agar metode CSS fleksibel berfungsi, kelilingi <div> elemen dengan <div> elemen lain dan berikan status sebagai wadah fleksibel.
+-->
+<style>
+    .mycontainer {
+        display: flex;
+    }
+    .mycontainer > div {
+        width: 33%;
+    }
+</style>
+
+
+<!-- GRID ( jaringan ) -->
+<!-- Modul tata letak Grid CSS menawarkan sistem tata letak berbasis grid, dengan baris dan kolom, sehingga memudahkan dalam mendesain halaman web tanpa harus menggunakan float dan pemosisian. 
+     Kedengarannya hampir sama dengan flex, tetapi memiliki kemampuan untuk menentukan lebih dari satu baris dan memposisikan setiap baris secara individual.
+     Metode grid CSS mengharuskan anda untuk mengelilingi <div> elemen dengan <div> elemen lain dan memberikan status wadah grid, dan harus menentukan lebar setiap kolom.
+-->
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+</style>
