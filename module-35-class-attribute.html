@@ -34,6 +34,96 @@
             <h2>Tokyo</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
         </div>
-        
+
     </body>
 </html>
+
+
+<!-- Dalam contoh berikut, kita memiliki dua <span> elemen dengan class atribut yang bernilai "note". Kedua <span> elemen akan diberi gaya sama sesuai dengan.note definisi gaya di bagian head :  -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .note {
+                font-size: 120%;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>My <span class="note">Important</span>Heading</h1>
+        <p>This is some <span class="note">important</span>text</p>
+    </body>
+</html>
+<!-- 
+    Tip : Atribut ini class dapat digunakan pada elemen HTML apa pun .
+    Catatan : Nama kelas peka dengan huruf besar/ kecil.
+-->
+
+
+<!-- SYNTAX FOR CLASS ( Sintaksi untuk kelas ) -->
+<!-- Untuk membuat kelas : tulis karakter titik ( . ), diikuti dengan nama kelas. kemudian tentukan properti CSS dalam kurung kurawal {} : -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .city {
+                background-color: tomato;
+                color: white;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 class="city">London</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <h2 class="city">England</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <h2 class="city">Tokyo</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </body>
+</html>
+
+
+<!-- MULTIPLE CLASSES ( beberapa kelas ) -->
+<!-- Elemen HTML dapat tergolong dalam lebih dari satu kelas.
+     Untuk menentukan beberapa kelas, pisahkan nama kelas dengan spasi, misalnya <div class="city main">. Elemen akan diberikan gaya sesuai dengan semua kelas yang ditentukan.
+     Dalam contoh berikut, <h2> elemen pertama milik kedua city kelas dan juga milik kedua main kelasn, dan akan mendapatkan gaya CSS dari kedua kelas : 
+-->
+<h2 class="city main">London</h2>
+<h2 class="city">Englan</h2>
+<h2 class="city">Tokyo</h2>
+
+
+<!-- DIFFERENT ELEMENTSS CAN SHARE SAME CLASS ( Elemen yang berbeda dapat berbagi kelas yang sama ) -->
+<!-- Elemen HTML yang berbeda dapat menunjuk ke nama kelas yang sama.
+     Dalam contoh berikut, keduanya <h2> dan <p> menunjuk ke kelas "kota" dan akan berbagi gaya yang sama :
+-->
+<h2 class="city">Paris</h2>
+<p class="city">paris Lorem ipsum dolor sit.</p>
+
+
+<!-- USE OF THE CLASS ATTRIBUTE IN JAVASCRIPT ( penggunaan atribut kelas di javascript ) -->
+<!-- Nama kelas juga dapat digunakan oleh javascript untuk melakukan tugas tertentu untuk elemen tertentu. 
+     JavaScript dapat mengakses elemen dengan nama kelas tertentu dengan "getElementByClassName()" motode :
+-->
+<script>
+    function myFunction() {
+        var x = document.getElementsByClassName("city");
+        for (var i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+    }
+</script>
+
+
+<!-- RINGKASAN BAB -->
+<!-- -  Atribut HTML class menentukan satu satu lebih nama kelas untuk suatu elemen. 
+     -  Kelas digunakan oleh CSS dan JavaScipt untuk memilih dan mengakses elemen tertentu
+     -  Atribut ini class dapat dapat digunakan pada elemen HTML apa pun
+     -  Nama kelas peka huruf besar/kecil
+     -  Elemen HTML yang berbeda dapat menunjuk ke nama kelas yang sama 
+     -  JavaScript dapat mengakses elemen dengan nama kelas tertentu dengan "getElementByClassName()" metode.
+-->
