@@ -34,3 +34,78 @@
 
 <!-- Perbedaan Antara kelas dan ID ( class & id ) -->
 <!-- Nama kelas dapat digunakan oleh beberapa elemen HTML, sedangkan nama id hanya boleh digunakan oleh satu elemen HTML dalam halaman :  -->
+<style>
+     /* Style the element with the id "myHeader" */
+     #myHeader {
+          background-color: lightblue;
+          color: black;
+          padding: 40px;
+          text-align: center;
+     }
+
+     /* Style all elments with the class name "city" */
+     .city {
+          background-color: tomato;
+          color: white;
+          padding: 10px;
+     }
+</style>
+
+<!-- An element with a unique id ( gunakan nama id dengan kode unik ) -->
+<h1 id="myHeader">My Cities</h1>
+
+<!-- Multiple elements with same class ( Menggunakan elemen dengan nama class yang sama ) -->
+<h2 class="city">London</h2>
+<p>Lorem ipsum dolor sit amet.</p>
+
+<h2 class="city">England</h2>
+<p>Lorem ipsum dolor sit amet.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Lorem ipsum dolor sit amet.</p>
+
+
+<!-- HTML BOOKMARKS WITH ID AND LINKS ( Bookmarks HTML dengan ID dan Tautan ) -->
+<!-- Penanda HTML digunakan untuk memungkinkan pembaca melompat ke bagian tertentu dari halaman web. 
+     
+     Bookmark dapat berguna jika halaman anda sangat panjang.
+
+     Untuk menggunakan penenda buku, Anda harus membuatnya terlebih dahulu, lalu menambahkan tautan ke dalamnya.
+
+     Lalu, saat tautan diklik, halaman akan bergulir ke lokasi yang terdapat penenda buku.
+
+     Contoh : 
+
+     <h2 id="C4">Chapter 4</h2>
+
+     kemudian, tambahkan tautan ke penanda buku ("Lompat ke bab 4"), dari dalam halaman yang sama :
+
+     <a href="#C4">Jump to chapter 4</a>
+
+     Atau, Tambahkan tautan ke penanda buku ("Lompat ke bab 4"), dari halaman lain :
+
+     <a href="html_demo.html#C4">Jump to Chapter 4</a>
+-->
+
+
+<!-- MENGGUNAKAN ATRIBUT ID DI JAVASCRIPT -->
+<!-- Atribut tersebut id juga dapat digunakan oleh javaScript untuk melakukan beberapa tugas untuk elemen spesifik tersebut.
+     
+     Javascript dapat mengakses elemen dengan id tertentu dengan "getElementById()" metode :
+
+     Contoh menggunakan id atribut untuk memanipulasi teks dengan JavaScript :
+-->
+<script>
+     function dispalyResult() {H
+          document.getElementById("myHeader").innerHTML = "Have a nice day!";
+     }
+</script>
+
+<!-- RINGKASAN BAB -->
+<!-- - Atribut id ini digunakan untuk menentukan id unik untuk elemen HTML
+     - Nilai id atribut harus unik dalam dokumen HTML.
+     - Atribut id ini digunakan oleh CSS dan JAVASCRIPT untuk memberi gaya/memilih elemen tertentu
+     - Nilai atribut id peka huruf besar/kecil
+     - Atribut ini id juga digunakan untuk membuat bookmark HTML
+     - Javascript dapat mengakses elemen id tertentu dengan getElemenById() metode
+-->
