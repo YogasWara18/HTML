@@ -1,0 +1,56 @@
+<!-- HTML IFRAMES -->
+<!-- Inframe HTML digunakan untuk menampilkan halaman web di dalam halaman web.-->
+
+<!-- HTML IFRAME SYNTAX ( sintaksis iframe HTML )  -->
+<!-- Tag HTML <iframe> menentukan bingkai sebaris -->
+<!-- Bingkai sebaris digunakan untuk menanamkan dokumen lain dalam dokumen HTML saat ini. -->
+<iframe src="url" title="description"></iframe>
+<!-- Kiat : Merupakan praktik yang baik untuk selalu menyertakan title atribut untuk <iframe>. Ini digunakan oleh pembaca layar untuk membacakan konten iframe. -->
+
+
+<!-- IFRAME - MENGATUR TINGGI DAN LEBAR -->
+<!-- Gunakan atribut height dan width untuk menentukan ukuran iframe.
+
+     Tinggi dan lebar ditentukan dalam piksel secara default :
+-->
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>HTML iframes</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt a molestiae, vero exercitationem nihil est!</p>
+
+        <iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe>
+    </body>
+</html>
+
+<!-- Atau anda dapat menambahkan style atribut dan menggunakan CSS height dan width properti : -->
+<iframe src="demi_iframe.htm" style="height:200px;width:300px;" title="Iframe Example"></iframe>
+
+<!-- IFRAME - REMOVE THE BORDER ( iframe - hapus batasan ) -->
+<!-- Secara default, iframe memiliki batas di sekelilingnya.
+    
+     Untuk menghapus batas, tambahkan style atribut dan gunakan properti CSS border :
+-->
+<iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"></iframe>
+
+<!-- Dengan CSS, anda juga dapat mengubah ukuran, gaya, dan warna batas iframe : -->
+<iframe src="demo_iframe.htm" style="border:2px solid red;" title="Iframe Example"></iframe>
+
+<!-- IFRAME - TARGET FOR A LINK ( iframe - target untuk tautan ) -->
+<!-- Iframe dapat digunakan sebagai bingkai target untuk suatu tautan.
+     
+     Atribut target tautan harus merujuk ke name atribut iframe :
+-->
+<iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"></iframe>
+
+<p><a href="https://www.w3schools.com" target="iframe_a"W3SCHOOLS.COM></a></p>
+
+
+<!-- RINGKASAN BAB -->
+<!-- 
+     - Tag HTML <iframe> menentukan bingkai sebaris 
+     - Atribut src mendefinisikan URL halaman yang akan disematkan 
+     - Selalu sertakan tittle atribut ( untuk pembaca layar )
+     - atribut height dan width menentukan ukuran iframe
+     - Digunakan border:none; untuk menghapus batas di sekitar iframe 
+-->
