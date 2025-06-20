@@ -1,0 +1,52 @@
+<!-- HTML FILE PATHS ( jalur berkas HTML )-->
+<!-- Jalur berkas menggambarkan lokasi berkas dalam struktur folder situs web . -->
+<!-- FILE PATH ( Contoh jalur file ) -->
+<!-- 
+    Path( jalur )                       Description( keterangan )        
+    
+    <img src="prctue.jpg">              - File "picture.jpg" terletak di folder yang sama dengan halaman saat ini.
+    <img src="images/picture.jpg">      - File "picture.jpg" terletak di folder gambar di folder saat ini.
+    <img src="/images/picture.jpg">     - File "picture.jpg" terletak di folder gambar di root situs web saat ini.
+    <img src="../piscture.jpg">         - File "picture.jpg" terletak di folder satu tingat di atas folder saat ini.     
+-->
+
+
+<!-- HTML FILE PATHS ( Jalur berkas HTML ) -->
+<!-- Jalur berkas menggambarkan lokasi berkas dalam struktu folder situs web. -->
+<!-- Jalur berkas digunakan saat menautkan ke berkas eksternal, seperti : 
+ 
+     - Halaman Web 
+     - Gambar
+     - Lembar gaya
+     - Javascript dalam bahasa inggris
+-->
+
+
+<!-- ABSOLUTE FILE PATHS ( jalur file absolut ) -->
+<!-- Jalur berkas absolut adalah URL lengkap ke suatu berkas : -->
+<!-- Contoh -->
+<img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain">
+
+
+<!-- RELATIVE FILE PATHS ( jalur file relatif ) -->
+<!-- Jalur bekas relatif menunjuk ke berkas yang relatif terhadap halaman saat ini. -->
+<!-- Dalam contoh berikut, jalur berkas menunjuk ke berkas dalam folder gambar yang terletak di akar web saat ini : -->
+<!-- Contoh :  -->
+<img src="/images/picture.jpg" alt="Mountain">
+
+
+<!-- Dalam contoh berikut, jalur berkas menunjuk ke berkas di folder gambar yang terletak di folder saat ini : -->
+<!-- Contoh : -->
+<img src="images/picture.jpg" alt="Mountain">
+
+
+<!-- Dalam contoh berikut, jalur berkas menunjuk ke berkas dalam folder gambar yang terletak pada folder satu tingkat diatas folder saat ini :  -->
+<!-- Contoh : -->
+<img src="../images/picture.jpg" alt="Mountain">
+
+
+<!-- Praktik terbaik -->
+<!-- Praktik terbaiknya adalah menggunakan jalur berkas relatif ( jika memungkinkan ).
+     
+     Bila menggunakan jalur berkas relatif, halaman web anda tidak akan terikat dengan URL dasar anda saat ini. Semua tautan akan berfungsi di komputer anda sediri ( localhost ) serta di domain publik anda saat ini dan domain publik anda di masa mendatang. 
+-->
