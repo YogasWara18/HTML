@@ -1,0 +1,63 @@
+<!-- HTML JAVASCRIPT ( Bahasa pemrograman HTML dan JavaScript ) -->
+<!-- JavaScript membuat halaman HTML lebih dinamis dan interaktif -->
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>My First JavaScript</h1>
+
+        <button type="button" onclick="document.getElemenById('demo').innerHTML = date()">
+            Click me to display Date and Time.
+        </button>
+
+        <p id="demo"></p>
+    </body>
+</html>
+
+
+<!-- THE HTML <script> TAG ( Tag HTML <script> ) -->
+<!-- Tag HTML <script> digunakan untuk mendefenisikan skrip sisi klien ( javaScript ).
+
+     Elemen tersebut <script> berisi pernyataan skrip, atau menunjuk ke berkas skrip eksternal melalui src atribut.
+
+     Penggunaan umum JavaScript adalah manipulasi gambar, validasi formulir, dan perubahan konten yang dinamis.
+
+     Untuk memilih elemen HTML, JavaScript paling sering menggunakan "document.getElementById()" metode berikut.
+
+     Contoh JavaScript ini menuliskan "Halo JavaScript" ke dalam elemen HTML dengan id="demo":
+-->
+<script>
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+
+
+<!-- A TASTE OF JAVASCRIPT ( sedikit rasa javascript ) -->
+<!-- Berikut adalah beberapa contoh apa yang dapat dilakukan JavaScript : -->
+<!-- Contoh  -->
+<!-- JavaScript dapat mengubah konten : -->
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+
+<!-- Contoh -->
+<!-- JavaScript dapat mengubah gaya -->
+document.getElementById("demo").style.fontsize = "25px";
+document.getElementById("demo").style.color = "red";
+document.getElementById("demo").style.backgroundColor = "yellow";
+
+<!-- Contoh -->
+<!-- JavaScript dapat mengubah atribut : -->
+document.getElementById("image").src = "picture.gif";
+
+
+<!-- THE HTML <noscript> TAG ( tag HTML <noscript> ) -->
+<!-- Tag HTML <noscript> mendefinisikan konten alternatif yang akan ditampilkan kepada pengguna yang telah menonaktifkan skrip di browser mereka atau memiliki browser yang tidak mendukung skrip  : -->
+<!-- contoh -->
+<script>
+    document.getElementById("demo").innerHTML = "Hello JavaScript";
+</script>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+
+<!-- TAG SKRIP HTML -->
+<!-- <script> -> untuk mendefinisikan skrip dari sisi klien -->
+<!-- <noscript> -> untuk menentkan alternatif pengguna yang tidak mendukung dari sisi klien side. -->
+
+    
