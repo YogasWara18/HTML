@@ -1,0 +1,283 @@
+<!-- HTML SEMANTIC ELEMENTS ( Elemen Semantik HTML ) -->
+<!-- Unsur semantik = unsur yang memiliki makna. -->
+
+<!-- APA ITU ELEMEN SEMANTIK -->
+<!-- Elemen semantik menggambarkan maknanya dengan jelas bagi peramban dan pengembang
+
+     Contoh unsur non-semantik : <div> dan <span> - Tidak memberi tahu apa pun tentang isinya. 
+
+     Contoh unsur semantik : <img>, <table>, dan <article> - mendefinisikan isinya dengan jelas.
+-->
+
+<!-- ELEMEN SEMANTIK DALAM HTML -->
+<!-- Banyak situs web berisi kode HTML seperti : <div id="nav">  <div class="header"> <div id="footer"> untuk menunjukkan navigasi, header, dan footer .
+    
+     Dalam HTML ada beberapa elemen semantik yang dapat digunakan untuk mendefinisikan berbagai bagian halaman web :
+     - <article>
+     - <aside>
+     - <details>
+     - <figure>
+     - <footer>
+     - <footer>
+     - <header> 
+     - <main>
+     - <mark>
+     - <nav>
+     - <section>
+     - <summary>
+     - <time>
+-->
+
+
+<!-- HTML <section> Element -->
+<!-- Elemen <section> mendefinisikan bagian dalam suatu dokumen.
+
+     Menurut dokumentasi HTML W3C: "Bagian dalah pengelompokan konten tematik, biasanya dengan judul."
+
+     Contoh di masa suatu <section> elemen dapat digunakan :
+
+        - Bab - bab ( Chapters)
+        - Perkenalan ( Introduction )
+        - Berita ( News items )
+        - Informasi kontak ( Contact information )
+
+     Sebuah halaman web biasanya dapat dibagi menjadi beberapa bagian untuk pengenalan konten, dan informasi kontak . 
+-->
+<!-- Contoh  -->
+<!-- Dua bagian dalam dokumen -->
+<section>
+    <h1>WWF</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis incidunt culpa obcaecati error asperiores ex enim id esse provident doloribus!</p>
+</section>
+
+<section>
+    <h1>WWF's Panda symbol</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus magni in illo quae praesentium quaerat pariatur sunt est facere explicabo.</p>
+</section>
+
+
+<!-- HTML <article> Element -->
+<!-- Elemen tersebut <article> menentukan konten yang independen dan mandiri. 
+
+     Suatu artikel harus masuk akal dengan sendirinya, dan harus dapat didistribusikan secara terpisah dari bagian situs web lainnya.
+
+     Contoh di mana <article> elemen dapat digunakan :
+        - Postingan forum ( Forum posts )
+        - Tulisan blog ( Blog posts )
+        - Komentar pengguna ( User comments )
+        - Kartu produk ( Product cards )
+        - Artikel surat kabar ( Newspaper articles )
+-->
+<!-- Contoh -->
+<!-- Tiga artikel dengan konten yang independen dan berdiri sendiri : -->
+<article>
+    <h2>Google Chrome</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum itaque culpa veniam molestiae deserunt a?</p>
+</article>
+
+<article>
+    <h2>Mozilla Firefox</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusantium, rem corporis dicta totam ratione!</p>
+</article>
+
+<article>
+    <h2>Microsoft Edge</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt alias quaerat optio tempore quos doloremque.</p>
+</article>
+
+<!-- Contoh 2 -->
+<!-- Gunakan CSS untuk memberi gaya pada elemen <article> : -->
+<html>
+    <head>
+        <style>
+            .all-browsers {
+                margin: 0;
+                padding: 5px;
+                background-color: lightgray;
+            }
+
+            .all-browsers > h1, .browser {
+                margin: 10px;
+                padding: 5px;
+            }
+
+            .browser {
+                background: white;
+            }
+
+            .browser > h2, p {
+                margin: 4px;
+                font-size: 90%;
+            }
+        </style>
+    </head>
+    <body>
+        <article class="all-browsers">
+            <h1>Most popular Browsers</h1>
+            <article class="browser">
+                <h2>Google Chrome</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus accusantium voluptate aperiam dolore, ratione adipisci?</p>
+            </article>
+            <article class="browser">
+                <h2>Mozilla Firefox</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias deleniti, magnam magni vero exercitationem pariatur!</p>
+            </article>
+            <article>
+                <h2>Microsoft edge</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit molestiae ducimus doloremque, at error voluptas.</p>
+            </article>
+        </article>
+    </body>
+</html>
+
+
+<!-- NESTING <article> in <section> OR VICE VERSA? ( Menumpuk <article> didalam <section> atau sebaliknya? ) -->
+<!-- Elemen tersebut <article> menentukan konten yang independen dan mandiri.
+
+     Elemen <section> mendefinisikan bagian dalam suatu dokumen.
+
+     Bisakah kita menggunakan definisi untuk memutuskan cara menumpuk elemen - elemen tersebut? tidak, kita tidak bisa!
+
+     Jika, Anda akan menemukan halaman HTML dengan <section> elemen yang mengandung <article> elemen, dan <article> yang mengandung <section> elemen.
+-->
+
+<!-- HTML ELEMENT <header> -->
+<!-- Elemen tersebut <header> mewakili wadah untuk konten pengantar atau serangkaian tautan navigasi .
+
+     Suatu <header> unsur biasanya mangandung :
+
+        - Satu atau lebih elemen heading ( <h1> - <h6> )
+        - Logo atau ikon
+        - Informasi kepengarangan
+
+    Catatan : Anda dapat memiliki beberapa <header> elemen dalam satu dokumen HTML. Namun, <header> tidak dapat ditempatkan di dalam <footer>, <address> atau <header> elemen lainnya.
+-->
+<!-- Contoh -->
+<!-- Header untuk <article> -->
+<article>
+    <header>
+        <h1>What Does WWF Do?</h1>
+        <p>WWF's mission :</p>
+    </header>
+    <p>WWF's misson is to stop the degradation of our planet's natural environment, and build a future in which humas live in harmony with nature. </p>
+</article>
+
+
+<!-- HTML ELEMENT <footer> -->
+<!-- Elemen ini <footer> mendefinisikan footer untuk dokumen atau bagian. 
+
+     Suatu <footer> unsur biasanya mengandung : 
+
+        - Informasi kepengarangan 
+        - informasi hak cipta
+        - informasi kontak 
+        - peta situs 
+        - kembali ke tautan atas
+        - dokumen terkait
+
+    Anda dapat memiliki beberapa <footer> elemen dalam satu dokumen.
+-->
+<!-- Contoh -->
+<!-- Bagian footer dalam dokumen : -->
+<footer>
+    <p>Author: Hegef Refsnes</p>
+    <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+</footer>
+
+
+<!-- HTML ELEMENT <nav> -->
+<!-- Elemen ini <nav> mendefinisikan serangkaian tautan navigasi  -->
+
+<!-- Perhatikan bahwa TIDAK semua tautan dokumen harus berada di dalam suatu <nav> elemen. <nav> elemen ini hanya ditunjukkan untuk blok utam tautan navigasi.
+    
+     Peramban, seperti pembaca layar untuk pengguna penyandang disabilitas, dapat menggunakan elemen ini menentukan apakah akan menghilangkan rendering awal konten ini.    
+-->
+<!-- Contoh -->
+<!-- Seperangkat tautan navigasi -->
+<nav>
+    <a href="/html/">HTML</a> |
+    <a href="/css/">CSS</a> |
+    <a href="/js/">JAVASCRIPT</a> |
+    <a href="jquery">JQUERY</a>
+</nav>
+
+
+<!-- HTML ELEMENT <aside> -->
+<!-- Elemen <aside> mendefinisikan beberapa konten selain konten dimana ia ditempatkan ( seperti bilah sisi ).
+
+     Kontennya <aside> harus berhubungan secara tidak langsung dengna konten di sekitarnya.
+-->
+<!-- Contoh -->
+<!-- Menampilkan beberapa konten selain konten yang ditaruh di dalamanya : -->
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolore delectus, consequatur aspernatur temporibus accusantium!</p>
+
+<aside>
+    <h4>Epcot Center</h4>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, aperiam?</p>
+</aside>
+
+<!-- Contoh 2 -->
+<!-- Gunakan CSS untuk memberi gaya pada elemen <aside> : -->
+<htmL>
+    <head>
+        <style>
+            aside {
+                width: 30%;
+                padding-left: 15px;
+                margin-left: 15px;
+                float: right;
+                font-style: italic;
+                background-color: lightgray;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus architecto molestias, eius incidunt similique iusto.</p>
+
+        <aside>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quidem corrupti commodi fugit iste ducimus iure sapiente rem eos magni?</p>
+        </aside>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit deserunt magni aut eos iure corporis enim accusamus esse itaque. Quia rem omnis odit adipisci similique!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, ipsam iste omnis commodi reprehenderit harum distinctio nemo voluptatem. Ea quisquam aliquam quaerat dolorem aliquid? Accusantium?</p>
+    </body>
+</htmL>
+
+
+<!-- HTML <figure> AND <figcaption> ELEMENTS -->
+<!-- Tag tersebut <figure> menentukan konten mandiri, sperti ilustrasi, diagram, foto, daftar kode, dll.
+
+     Tag ini <figcaption> mendefinisikan judul untuk suatu <figure> elemen.
+     <figcaption> elemen dapat ditempatkan sebagai anak pertama atau anak terakhir dari suatu <figure> elemen.
+        
+     Elemen <img> mendefinisikan gambar/ilustrasi sebenarnya.
+-->
+<!-- contoh -->
+<figure>
+    <img src="pic_trulli.jpg" alt="Trulli">
+    <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+</figure>
+
+
+<!-- WHY SEMANTIC ELEMENTS? ( mengapa elemen semantic? ) -->
+<!-- Menurut W3C: "Web semantik memungkinkan data dibagikan dan digunakan kembali di seluruh aplikasi, perusahan, dan komunitas" -->
+
+
+<!-- SEMANTIC ELEMENTS IN HTML ( Elemen semantik dalam HTML ) -->
+<!-- Berikut daftar beberapa elemen semantik dalam HTML -->
+<!-- 
+        Tag                         Description
+        <article>                   Mendefiniskan konten yang independen dan mandiri 
+        <aside>                     Mendefinisikan konten selain konten halaman
+        <details>                   Menentukan detail tambahan yang dapat dilihat atau disembunyikan pengguna
+        <figcaption>                Menentukan judul untuk elemen <figure>
+        <figure>                    Menentukan konten yang mandiri, seperti ilustrasi, diagram, foto, daftar kode, dll.
+        <footer>                    Mendefinisikan footer untuk dokumen atau bagian
+        <header>                    Menentukan header untuk dokumen atau bagian 
+        <main>                      Menentukan konten utama dokumen
+        <mark>                      Mendefinisikan teks yang ditandai/disorot
+        <nav>                       Menentukan tautan navigasi
+        <section>                   Menentukan bagian dalam dokumen
+        <summary>                   Menentukan judul yang terlihat untuk elemen <details>
+        <time>                      Menentukan tanggal/waktu
+-->
