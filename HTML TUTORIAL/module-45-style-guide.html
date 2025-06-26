@@ -265,3 +265,77 @@
 
      Berikut adalah contoh halaman web tanpa tag meta viewport, dan halaman web yang sama dengan tag meta viewport :
 -->
+
+
+<!-- MENGGUNAKAN STYLE SHEET -->
+<!-- Gunakan sintaksis sederhana untuk menautkan ke lembar gaya ( "type" atribut tidak diperlukan ) : -->
+<link rel="stylesheet" href="styles.css">
+<!-- Aturan CSS pendek dapat ditulis secara terkompresi, seperti ini: -->
+p.intro {font-family: Verdana;font-size:16em;}
+<!-- Aturan CSS yang panjang harus ditulis dalam beberapa baris : -->
+body {
+    background-color: lightgrey;
+    font-family: "Arial Black", Helvetica, Sans-serif;
+    font-size: 16em;
+    color: black;
+}
+<!-- 
+    - Tempatkan tanda kurung pembuka pada garis yang sama dengan pemilih
+    - Gunakan satu spasi sebelum tanda kurung buka 
+    - Gunakan dua spasi indentasi
+    - Gunakan titik koma setelah setiap pasangan properti - nilai, termasuk yang terakhir
+    - Hanya gunakan tanda kutip di sekitar nilai jika nilai tersebut mengandung spasi
+    - Tempatkan tanda kurung tutup pada baris baru, tanpa spasi di depan
+-->
+
+
+<!-- MEMUAT JAVASCRIPT DIDALAM HTML -->
+<!-- Gunakan Sintaksis sederhana untuk memuat skrip eksternal ( "type" atribut tidak diperlukan ) : -->
+<script src="myscript.js"></script>
+
+
+<!-- MENGAKSES ELEMEN HTML DENGAN JAVASCRIPT -->
+<!-- Menggunakan kode HTML yang "tidak rapi" dapat mengakibtkan kesalahan JAVASCRIPT. 
+
+     Kedua pernyataan JAVASCRIPT ini akan menghasilkan hasil yang berbeda :
+-->
+<!-- Contoh -->
+getElementById("Demo").innerHTML = "Hello";
+
+getElementById("demo").innerHTML = "Hello";
+
+
+<!-- GUNAKAN NAMA FILE HURUF KECIL -->
+<!-- Beberapa server web ( Apache, Unix ) peka terhadap huruf besar/kecil mengenai nama file : "london.jpg" tidak dapat diakses sebaggai "London.jpg".
+
+     Server web lain ( Microsoft, IIS ) tidak peka huruf besar/kecil : "london.jpg" dapat diakses sebagai "London.jpg".
+
+     Jika anda menggunakan campuran huruf besar dan kecil, Anda harus menyadari hal ini : 
+
+     Jika anda berpindah dari server yang tidak peka huruf besar/kecil ke server yang peka huruf besar/kecil, kesalahan kecil sekalipun akan merusak web Anda!
+
+     Untuk menghindari masalah ini, selalu gunakan nama file huruf kecil!
+-->
+
+<!-- EKSTENSI FILE -->
+<!-- 
+    File HTML harus memiliki ekstensi .htm ( .htm diperbolehkan ).
+
+    File CSS harus memiliki ekstensi .css
+
+    File JavaScript harus memiliki ekstensi .js
+-->
+
+<!-- PERBEDAAN ANTARA .htm dan .html? -->
+<!-- Tidak ada perbedaan antara ekstensi .htm dan .html
+ 
+     Keduanya akan diperlakukan sebagai HTML oleh peramban web dan server web mana pun. 
+-->
+
+<!-- NAMA FILE DEFAULT -->
+<!-- Jika URL tidak menentukan nama berkas di akhir ( seperti "https://www.w3schools.com/"), server hanya menambahkan nama berkas default, seperti "index.html", "index.htm", "default.html", atau "default.htm". 
+    
+     Jika server anda dikonfigurasi hanya dengan "index.html" sebagai nama file default, file anda harus diberi nama "index.html", dan bukan "default.html".
+
+     Namun, server dapat dikonfigurasikan dengan lebih dari satu nama file default; biasanya anda dapat mengatur nama file default sebanyak yang anda inginkan. 
+-->
