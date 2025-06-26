@@ -187,5 +187,81 @@
 
 <h1>This is a heading</h1>
 <p>This is a paragraph</p>
+<!-- Namun, kami sangat menyarankan untuk selalu menambhkan tag <html> dan <body>! 
+    
+     Menghilangkan <body> dapat menimbulkan kesalahan pada peramban lama.
+        
+     Mengabaikan <html> dan <body> juga dapat marusak perangkat lunak DOM dan XML.
+-->
 
 
+<!-- OMITTING <head> ( Menghilangkan <head> ) -->
+<!-- Tag HTML <head> juga dapat dihilangkan. 
+
+     Peramban akan menambahkan semua elemen sebelum <body>, ke <head> elemen default.
+-->
+<!-- Contoh -->
+<!DOCTYPE html>
+<html>
+    <title>Page Title</title>
+    <body>
+
+        <h1>This is a heading</h1>
+        <p>This is a paragraph</p>
+
+    </body>
+</html>
+<!-- Namun, kami sarankan untuk menggunakan <head> tag. -->
+
+
+<!-- CLOSE EMPTY HTML ELEMENTS? ( Tutup elemen HTML kosong? ) -->
+<!-- Dalam HTML, menutup elemen kosong merupakan hal yang opsional. -->
+<!-- Diizinkan : -->
+<meta charset="utf-8">
+<!-- Juga diizinkan -->
+<meta charset="utf-8"/>
+<!-- Jika anda mengharapkan perangkat lunak XML/XHTML mengakses halaman anda, pertahankan garis miring penutup ( / ), karena itu diperlukan dalam XML dan XHTML.  -->
+
+
+<!-- ADD THE LANG ATTRIBUTE ( Tambahkan attribut "lang" ) -->
+<!-- Anda harus selalu meyertakan "lang" atribut di dalam <html> tag, untuk menyatakan bahasa halaman web. Hal ini dimaksudkan untuk membantu mesin pencari dan browser. -->
+<!-- Contoh -->
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Page title</title>
+    </head>
+    <body>
+
+        <h1>This is a heading</h1>
+        <p>This is a paragraph</p>
+
+    </body>
+</html>
+
+
+<!-- METADATA -->
+<!-- Untuk memastikan interpretasi yang tepat dan pengindeksan mesin pencari yang benar, bahasa dan pengkodean karakter harus didefinisikan sedini mungkin dalam dokumen HTML: <meta charset="cahrset"> -->
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Page Title</title>
+    </head>
+</html>
+
+
+<!-- MENGATUR VIEWPORT -->
+<!-- Viewport adalah area yang terlihat oleh pengguna di halaman web. Viewport berbeda - beda tergantung pada perangkatnya - Viewport akan lebih kecil di ponsel daripada dilayar komputer.
+
+     Anda harus meyertakan elemen berikut <meta> di semua halaman web anda :
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Ini memberikan instruksi kepada browser tentang cara mengendalikan dimensi dan skala halaman. 
+ 
+     Bagian ini "width=device-width" mengatur lebar halaman agar mengikuti lebar layar perangkat ( yang akan bervariasi tergantung pada perangkat ).
+
+     Bagian ini "initial-scale=1.0" mengatur tingkat zoom awal saat halaman pertama kali dimuat oleh browser.
+
+     Berikut adalah contoh halaman web tanpa tag meta viewport, dan halaman web yang sama dengan tag meta viewport :
+-->
