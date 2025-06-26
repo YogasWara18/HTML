@@ -95,3 +95,97 @@
 <img src="html5.gif">
 
 
+<!-- SPACES AND EQUAL SIGNS ( Spasi dan tanda sama dengan ) ->
+<!-- HTML memperbolehkan spasi di sekitar tanda sama dengan. Namun, spasi lebih mudah dibaca dan mengelompokkan entitas secara lebih baik.  -->
+<!-- Good -->
+<link rel="stylesheet" href="style.css">
+<!-- Bad -->
+<link rel = "stylesheet" href = "styles.css">
+
+
+<!-- AVOID LONG CODE LINES ( Hindari baris code yang panjang ) -->
+<!-- Saat menggunakan editor HTML, TIDAK mudah untuk menggulir ke kanan dan kiri untuk membaca kode HTML. 
+
+     Cobalah untuk menghindari baris ode yang terlalu panjang.
+-->
+
+
+<!-- BLANK LINES AND INDENTATION ( Baris kosong dan indentasi )-->
+<!-- Jangan menambahkan baris kosong, spasi, atau indentasi tanpa alasan.
+
+     Agar mudah dibaca, tambahkan baris kosong untuk memisahkan blok kode yang besar atau logis.
+
+     Agar mudah dibaca, tambahkan dua spasi indentasi. Jangan gunakan tombol tab.
+-->
+<!-- Good -->
+<body>
+
+    <h1>Famous Citites</h1>
+
+    <h2>Tokyo</h2>
+    <p>Tokyo Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odio excepturi eaque.</p>
+
+    <h2>London</h2>
+    <p>london Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus odio natus aliquam!</p>
+
+    <h2>Paris</h2>
+    <p>Paris Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor excepturi amet voluptatum.</p>
+
+</body>
+<!-- Bad -->
+<body>
+    <h1>Famous Cities</h1>
+    <h2>Tokyo</h2><p>Tokyo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti unde dicta id!</p>
+    <h2>London</h2><p>London Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero rem ipsum inventore!</p>
+    <h2>Paris</h2><p>Paris Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ut modi voluptate!</p>
+</body>
+<!-- GOOD TABLE EXAMPLE ( Contoh tabel yang baik ) : -->
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>A</td>
+        <td>Description of A</td>
+    </tr>
+    <tr>
+        <td>B</td>
+        <td>Description of B</td>
+    </tr>
+</table>
+<!-- GOOD LIST EXAMPLE ( Contoh daftar yang baik ) : -->
+<ul>
+    <li>London</li>
+    <li>Paris</li>
+    <li>Tokyo</li>
+</ul>
+
+
+<!-- NEVER SKIP THE <title> ELEMENT ( Jangan pernah melewatkan elemen <title> ) -->
+<!-- Elemen ini <title> diperlukan dalam HTML.
+
+     Isi hudul halaman sangat penting untuk optimasi mesin pencari ( SEO )! Judul halaman digunakan oleh algoritma mesin pencari untuk menentukan urutan saat mencantumkan halaman dalam hasil pencarian.
+
+     Elemen <title> :
+
+        - Mendefinisikan judul di bilah alat browser.
+        - Memberikan judul untuk halaman saat ditambahkan ke favorit.
+        - Menampilkan judul halaman dalam hasil mesin pencari.
+
+     Jadi, Cobalah untuk membuat judul seakurat dan bermakna mungkin :
+-->
+<title>HTML style Guide And Coding Conventions</title>
+
+
+<!-- OMITTING <html> and <body>? ( Menghilangkan <html> dan <body> ) -->
+<!-- Halaman HTML akan divalidasi tanpa tag <html> dan <body> : -->
+<!DOCTYPE html>
+<head>
+    <title>Page title</title>
+</head>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph</p>
+
+
