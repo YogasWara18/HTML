@@ -1,0 +1,93 @@
+<!-- HTML ENTITIES -->
+<!-- Dalam HTML, Entities adalah cara untuk menampilkan karakter khusus yang tidak bisa langsung ditulis dalam kode HTML karena bisa membingungkan browser. Misalnya, tanda < dan > digunakan untuk menandai elemen HTML, jadi kalau kamu ingin menampilkan simbol < di halaman web, kamu harus menulisnya sebagai &lt; . -->
+<!-- HTML Entities selalu dimulai dengan tanda & dan diakhiri dengan ; -->
+<!-- Contoh umum lainnya : -->
+<!--    - &gt; untuk > ( Greater than ) 
+        - &amp; untuk & ( Ampersand )
+        - &quot; untuk " ( Kutipan ganda )
+        - &nbsp; untuk spasi yang tidak bisa dipisah ( non - breaking space )
+-->
+<!-- Entities ini sangat berguna saat kamu ingin menampilkan simbol matematika, mata uang, atau karakter khusus lainnya yang tidak tersedia di keyboard atau bisa mengacaukan struktur HTML  -->
+<!-- Karakter yang dicadangkan dalam HTML harus diganti dengan entitas :
+    
+     - < ( kurang dari ) = <
+     - > ( lebih besar dari ) = >
+-->
+
+<!-- ENTITAS KARAKTER HTML -->
+<!-- Beberapa karakter dicadangkan dalam HTML.
+
+     Jika anda menggunakan tanda kuranf dari ( < ) atau lebih besar dari ( > ) dalam teks HTML anda, browser mungkin mencampurnya dengan tag.
+     
+     Nama entitas atau nomor entitas dapat digunakan untuk menampilkan karakter HTML yang dicadangkan.
+
+     Nama entitas terlihat seperti ini :
+-->
+&entity_name;
+<!-- Nomor entitas terlihat seperti ini : -->
+&#entity_number;
+<!-- Untuk menampilkan tanda kurang dari ( < ) kita harus menulis : < atau < -->
+<!-- Nama entitas lebih mudah diingat daripada nomor entitas -->
+
+
+<!-- RUANG TANPA PUTUS -->
+<!-- Entitas HTML yang umum digunakan adalah spasi tanpa putus :
+ 
+     Spasi tak terputus adalah spasi yang tidak akan terputus menjadi baris baru. 
+
+     Dua kata yang dipisahkan oleh spasi tidak terputus akan tetap menyatu ( Tidak terputus pada baris baru ). Ini berguna jika pemisahan kata dapat mengganggu. 
+
+     contoh : 
+
+        - § 10
+        - 10 km/jam
+        - jam 10 malam
+
+    Penggunaan umum lain dari spasi tanpa putus adalah untuk mencegah peramban memotong spasi di halaman HTML.
+
+    Jika anda menulis 10 spasi dalam teks, browser akan menghapus 9 spasi. untuk menambahkan spasi sebenarnya ke teks, anda dapat menggunakan entitas karakter.
+
+    Tanda hubung tidak putus ( - ) digunakan untuk menentukan karakter tanda hubung ( - ) yang tidak putus pada baris baru.
+-->
+
+<!-- Beberapa Entitas karakter HTML yang Berguna -->
+<!-- 
+        Result      Dedcription                     Name            Number
+                    Non-breaking space              &nbsp;          &#160;
+        <           Less than                       &lt;            &#60;
+        >           Greater than                    &gt;            &#62;
+        &           Ampersand                       &amp;           &#38;
+        "           Double quotation mark           &quot;          &#34;
+        '           Single quotation mark           &apos;          &#39;
+        ¢           Cent                            &cent;          &#162;
+        £           Pound                           &pound;         &#163;
+        ¥           Yen                             &yen;           &#165;
+        €           Euro                            &euro;          &#8364;
+        ©           Copyright                       &copy;          &#169;
+        ®           Registered trademark            &reg;           &#174;
+        ™           Trademark                       &trade;         &#8482;
+
+CATATAN : Nama entitas peka terhadap huruf besar/kecil.
+-->
+
+
+<!-- MENGGABUNGKAN TANDA DIAKRITIK -->
+<!-- Tanda diakritik adalah "glif" yang ditambahkan pada sebuah huruf.
+
+     Beberapa tanda diakritik, seperti tanda serius (') dan tanda akut (`) disebut aksen.
+
+     Tanda diakritik dapat digunakan dalam kombinasi dengan karakter alfanumerik untuk menghasilkan karakter yang tidak ada dalam rangkaian karakter ( pengkodean ) yang digunakan pada halaman.
+
+     Berikut beberapa contohnya :
+
+
+     Mark       Character           Construct               Result
+      ̀             a                 a&#768;                  à                         
+      ́             a                 a&#769;                  á
+      ^            a                 a&#770;                  â
+      ~            a                 a&#771;                  ã  
+      `            O                 O&#768;                  Ò
+      '            O                 O&#768;                  Ó  
+      ^            O                 O&#770;                  Ô 
+      ~            O                 O&#771;                  Õ   
+-->
