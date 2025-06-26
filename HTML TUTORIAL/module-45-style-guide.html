@@ -48,3 +48,39 @@
     <p>This is a paragraph.
     <p>This is a paragraph.
 </section>
+
+
+<!-- USE LOWERCASE ATTRIBUTE NAMES ( Gunakan Nama Atribut Huruf Kecil ) -->
+<!-- HTML memperbolehkan pencampuran huruf besar dan huruf kecil pada nama atribut. 
+ 
+     Namun, kami merekomendasikan penggunaan nama atribut dengan huruf kecil, karena :
+    
+        - Mencampur nama dengan huruf besar dan kecil terlihat buruk.
+        - Pengembang biasanya menggunakan nama dengan huruf kecil.
+        - Huruf kecil terlihat lebih bersih. 
+        - Huruf kecil mudah di ketik.
+-->
+<!-- Good -->
+<a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+<!-- Bad -->
+<a HREF="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+
+
+<!-- ALWAYS QUOTE ATTRIBUTE VALUES ( Selallu kutip nilai atribut ) -->
+<!-- HTML memperbolehkan nilai atribut tanpa tanda kutip.
+
+     Namun, kami merekomendasikan mengutip nilai atribut, karena :
+
+        - Pengembang biasanya mengutip nilai atribut.
+        - Nilai yang dikutip lebih mudah dibaca.
+        - Anda HARUS menggunakan tanda kutip jika nilainya mengandung spasi
+-->
+<!-- Good -->
+<table class="striped"></table>
+<!-- Bad -->
+<table class=striped></table>
+<!-- Very Bad -->
+<!-- Ini tidak berfungsi, karena nilainya mengandung spasi : -->
+<table class=table striped></table>
+
+
