@@ -30,3 +30,43 @@
      Tetapi perlu diingat: ASCII tidak mendukung karkater non-latin seperti huruf arab, Cina atau bahkan simbol mata uang seperti "£". jadi dalam pengembangan web modern, UTF-8 hampir selalu menjadi pilihan yang lebih aman dan fleksibel.
      kalau kamu bikin halaman web pakai teks bahasa indonesia atau campuran simbol lainnya, pengkodean UTF-8 jauh lebih cocok.
 -->
+
+
+<!-- THE ANSI CHARACTER SET ( SET KARAKTER ANSI ) -->
+<!-- Set karakter ANSI dalam HTML mengacu pada sekelompok encoding yang dulunya digunakan di sistem windows, terutama untuk bahasa - bahasa tertentu. ANSI bukanlah standar resmi global seperti UTF-8, tapi lebih merupakan istilah umum yang dipakai Microsoft untuk menyebut encoding yang berbeda - beda tergantung locale ( wilayah ) pengguna.
+     Misalnya :
+      - Windows-1252 ( untuk bahasa inggris dan eropa barat )
+      - Windows-1251 ( Untuk Rusia )
+      - dan lainnya. 
+     Kalau kamu melihat ini di HTML :
+-->
+<meta charset="windows-1252">
+<!-- Artinya halaman tersebut menggunakan encoding ANSI untuk eropa barat. 
+     Fungsi dalam HTML :
+
+          - Menampilkan karakter lokal dengan benar di sistem Windows lama, misalnya karakter aksen dalam bahasa prancis atau jerman.
+          - Kompatibilitas dengan dokumen lama atau sistem lawas yang belum beralih ke UTF-8. #
+           
+     Namun, ANSI tidak ideal untuk web modern, karena :
+
+          - Setiap versi ANSI hanya mendukung karakter dari satu wilayah. 
+          - Tidak bisa menampilkan simbol global, emoji, atau huruf non - latin secara konsisten. 
+          - Tidak seuniversal dan seaman UTF-8. 
+
+     Sekarang ini, Hampir semua halaman web menggunakan <meta charset="UTF-8"> karena lebih fleksibel dan internasional. Tapi seru juga kamu lagi ngulik kompatibilitas warisan digital!
+-->
+
+
+<!-- THE ISO-8859-1 CHARACTER SET ( Set karakter ISO-8859-1 ) -->
+<!-- Set karakter ISO-8859-1, juga dikenal sebagai LATIN-1, adalah salah satu encoding karakter lama yang digunakan dalam HTML untuk menampilkan teks bebahasa Eropa Barat, seperti Inggris, Spanyol, Prancis, Jerman, dan Italia.
+
+     Contoh Penggunaanya di HTML :
+-->
+<meta charset="ISO-8859-1">
+<!-- Fungsi utamanya : 
+     - Memastikan tampilan karakter khas Eropa Barat, seperti ñ, ü, ç, é, dan lain - lain, pada sistem yang mendukung ISO-8859-1.
+     - Digunakan secara luas di dokumen HTML pada era awal internet sebelum UTF-8 menjadi standart dominan. 
+     - Menyediakan kompatibilitas dengan browser atau perangkat lama yang belum beralih ke Unicode.
+
+     Namun, karena ISO-8859-1 hanya mendukung 256 karakter, ia tidak bisa menampilkan simbol dari bahasa lain seperti Arab, Mandarin, atau emoji modern. Oleh karena itu, saat ini hampir semua web modern menggunakan UTF-8 karena mencakup jauh lebih banyak karakter dan simbol. 
+-->
