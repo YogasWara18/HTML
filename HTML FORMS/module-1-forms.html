@@ -1,0 +1,91 @@
+<!-- HTML FORMS -->
+<!-- Formulir HTML digunakan untuk mengumpukan masukan pengguna. Masukan pengguna paling sering dikirim ke server untuk diproses.  -->
+<!-- Contoh -->
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2> HTML FORMS </h2>
+
+        <form action="/action_page.php">
+            <label for="fname"> First name: </label>
+            <br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname"> Last name: </label>
+            <br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magnam sed amet excepturi in mollitia, ad nam illum consectetur eum?</p>
+    </body>
+</html>
+
+
+<!-- THE ELEMENT <form>  -->
+<!-- Elemen HTML <form> digunakan untuk membuat formulir HTML untuk masukan pengguna :  -->
+<from>
+.
+form elements
+.
+</from>
+<!-- Elemen tersebut <form> merupakan wadah untuk berbagai jenis elemen input, seperti: bidang teks, kotak centang, tombol radio, tombol kirim, dan lain - lain.  -->
+
+
+<!-- THE LEMEN <input> -->
+<!-- Elemen HTML <input> adalah elemen formulir yang paling banyak digunakan. 
+ 
+     Suatu <input> elemen dapat ditampilkan dalam banyak cara, tergantung pada type atributnya. 
+
+     Berikut beberapa contohnya :
+-->
+<!-- 
+    JENIS                           KETERANGAN
+    <jenis input="teks">            Menampilkan bidang input teks satu baris
+    <jenis masukan="radio">         Menampilkan tombol radio ( untuk memilih salah satu dari banyak pilihan )
+    <jenis input="kotak centang">   Menampilkan kotak centang ( untuk memilih nol atau lebih dari banyak pilihan )  
+    <input jenis="kirim">           Menampilkan tombol kirim ( untuk mengirimkan formulir )
+    <input jenis="Tombol">          Menampilkan tombol yang dapat diklik
+-->
+
+
+<!-- BIDANG TEKS -->
+<!-- Menentukan <input type="text"> Bidang input satu baris untuk input teks. -->
+<!-- contoh -->
+<!-- Formulir dengan bidang input untuk teks : -->
+<form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname">
+</form>
+
+
+<!-- THE ELEMENT <label> -->
+<!-- Perhatikan penggunaan <label> elemen pada contoh di atas.
+
+     Tag <label> mendefinisikan label untuk banyak elemen formulir.
+
+     Elemen <label> ini berguna bagi pengguna pembaca layar, karena pembaca layar akan membacakan label dengan suara keras saat pengguna berfokus pada elemen inout. 
+
+     Elemen ini <label> juga membantu pengguna yang mengalami kesulitan mengklik pada area yang sangat kecil ( seperti tombol radio atau kotak centang ) - karena saat pengguna mengklik teks dalam <label> elemen, tombol radio/kotak centang akan diaktifkan atau tidak. 
+
+     Atribut for tag <label> harus sama dengan id atribut <input> elemen untuk mengikatnya bersama.
+-->
+
+
+<!-- Tombol Radio -->
+<!-- mendfiniskan <input type="radio"> tombol radio.
+     Tombol radio memungkinkan pengguna memilih SATU dari sejumlah pilihan yang terbatas.
+-->
+<!-- Contoh -->
+<!-- Formulir dengan tombol radio : -->
+<p>Choose your favorite web language:</p>
+
+<form>
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">JavaScript</label>
+</form>
