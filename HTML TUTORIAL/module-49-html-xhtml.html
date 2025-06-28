@@ -1,0 +1,113 @@
+<!-- HTML VS XHTML -->
+<!-- XHHTML adalah versi HTML yang lebih ketat dan berbasis XML. -->
+
+<!-- APA ITU XHTML? -->
+<!-- - XHTML adalah singkatan dari EXTENSIBLE HYPER TEXT MARKUP LANGUAGE.
+     - XHTML adalah versi HTML yang lebih ketat dan berbasis XML.
+     - XHTML adalah HTML yang didefiniskan sebagai aplikasi XML.
+     - XHTML didukung oleh semua browser utama
+-->
+
+<!-- Mengapa XHTML? -->
+<!-- XML adalah bahasa markup dimana dokumen harus ditandai dengan benar ( berformat "baik" ).
+
+    XHTML dikembangkan untuk membuat HTML lebih mudah dikembangkan dan fleksibel untuk digunakan dengan format data lain ( sperti XML ). Selain itu, browser mengabaikan kesalahan pada halaman HTML, dan mencoba menampilkan situs web meskipun terdapat beberapa kesalahan dalam markup. jadi XHTML dilengkapi dengan penanganan kesalahan yang jauh lebih ketat.
+-->
+
+<!-- Perbedaan paling penting dari HTML -->
+<!-- - <!DOCTYPE>   Wajib diisi
+     - Atribut xmlns di <html> wajib ada
+     - <html>, <head>, <title>, dan <body> wajib diisi
+     - Elemen harus selalu bersarang dengan benar
+     - Elemen harus selalu ditutup
+     - Elemen harus selalu dalam huruf kecil
+     - Nama atribut harus selalu dalam huruf kecil
+     - Nilai atribut harus selalu dikutip 
+     - Minimalisasi atribut dilarang
+-->
+
+
+<!-- XHTML - <!DOCTYPE...> Adalah wajib -->
+<!-- Dokumen XHTML harus memiliki deklarasai XHTML <!DOCTYPE>.
+ 
+    Elemen <html>, <head>, <title>, dan <body> juga harus ada, dan atibut xmlns di <html> harus menentukan namespace xml untuk dokumen tersebut.  -->
+<!-- Contoh -->
+<!-- Berikut adalah dokumen XHTML dengan tag minimum yang diperlukan : -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Title of document</title>
+    </head>
+    <body>
+        some content here..
+    </body>
+</html>
+
+
+<!-- ELEMEN XHTML HARUS DISUSUN DENGAN BENAR -->
+<!-- Dalam XHTML, elemen - elemen harus selalu bersarang dengan benar satu sama lain, seperti ini : -->
+<!-- Benar -->
+ <b><i>Some text</i></b>
+<!-- Salah -->
+<b><i>Some text</b></i>
+
+
+<!-- ELEMEN XHTML HARUS SELALU DITUTUP -->
+<!-- Dalam XHTML, elemen harus selalu ditutup, seperti ini : -->
+<!-- Benar -->
+<p>This is a paragraph</p>
+<p>This is a another paragraph</p>
+<!-- Salah -->
+<p> This is a paragraph
+<a> This is a paragraph 
+
+
+<!-- ELEMEN KOSONG XHTML HARUS SELALU DITTUTUP -->
+<!-- Dalam XHTML, Elemen kosong harus selalu ditutup, seperti ini : -->
+<!-- Benar -->
+A break: <br/>
+A horizontal rule: <hr/>
+A image: <img src="happy.gif" alt="Happy face"/>
+<!-- Salah -->
+A break <br>
+A Horizontal rule: <hr>
+An image: <img src="happy.gif" alt="Happy face">
+
+
+<!-- ELEMEN XHTML HARUS DALAM HURUF KECIL -->
+<!-- Dalam XHTML, nama elemen harus selalu menggunakan huruf kecil, seperti ini: -->
+<!-- Benar -->
+<body>
+    <p>this is a paragraph</p>
+</body>
+<!-- Salah -->
+<BODY>
+    <P>This is a paragraph</P>
+</BODY>
+
+
+<!-- Nama atribut XHTML harus dengan huruf kecil -->
+<!-- Dalam XHTML, nama atribut harus selalu menggunakan huruf kecil, seperti ini : -->
+<!-- Benar -->
+<a href="https://www.w3schools.com/html/">Visit our HTMK tutorial</a>
+<!-- Salah -->
+<a HREF="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+
+
+<!-- Nilai atribut XHTML harus dikutip -->
+<!-- Dalam XHTML, nilai atribut harus selalu dikutip seperti ini : -->
+<!-- Benar -->
+<a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+<!-- Salah -->
+<a href=https://www.w3schools.com/html/>visit our HTML tutorial</a>
+
+
+<!-- Minimalisasi Atribut XHTML Dilarang -->
+<!-- Dalam XHTML, minimisasi atribut dilarang: -->
+<!-- Benar -->
+<input type="checkbox" name="vehicle" value="car" checked="checked"/>
+<input type="text" name="lastname" disabled="disabled"/>
+<!-- Salah -->
+<input type="checkbox" name="vehicle" value="car" checked/>
+<input type="text" name="lastname" disabled/>
