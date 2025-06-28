@@ -5,7 +5,28 @@
 <!-- Set karakter ditentukan dalam <meta> tag : -->
 <!-- Contoh -->
 <meta charset="UTF-8">
-<!-- Spesifikasi HTML5 mendorong pengembang web untuk menggunakan set karakter UTF-8. 
+<!-- Berfungsi untuk "Menetapkan pengkodean karakter" ( character encoding ) halaman web agar menggunakan Unicode Transformation Format-8 alias UTF-8. Ini sangat penting karena :
+ 
+          - Mendukung berbagai bahasa dan simbol, termasuk huruf Latin, Arab, Jepang, Emoji dan banyak lagi.
+          - Mencegah karakter rusak ( seperti tanda tanya atau simbol aneh ) saat halaman ditampilkan di browser.
+          - Meningkatkan kompatibilitas lintas platform dan perangkat, karena UTF-8 adalah standar yang paling umum digunakan di web saat ini.
 
-     UTF-8 mencakup hampir semua karakter dan simbol di dunia!
+     Tanpa deklarasi ini, browser bisa menebak - nebak encoding yang digunakan, dan hasilnya bisa bikin konten tampak kacau.
+-->
+
+<!-- THE ASCII CHARACTER SET ( Set karakter ASCII ) -->
+<!-- Set karakter ASCII pada HTML merujuk pada penggunaan pengkodean karakter berbasis standar ASCII ( American Standard Code for information Interchange ). ASCII adalah sistem pengkodean karakter lama yang mewakili 128 karakter, termasuk huruf latin ( A - Z, a - z), angka ( 0 - 9 ), tanda baca besar, dan beberapa karakter kontrol.
+
+     Dalam konteks HTML, jika kamu menetapkan set karakter sebagai ASCII, biasanya artinya kamu menggunakan bentuk subset dari pengkodean seperti ini : 
+-->
+<meta charset="US-ASCII">
+<!-- Namun, pada praktiknya pengkodean UTF-8 lebih umum digunakan karena sudah mencakup ASCII dan jauh lebih luas.
+
+     Fungsi utama set karakter ASCII dalam HTML:
+
+          - Menjamin kompatibilitas dengan sistem lama atau perangkat lunak yang masih menggunakan standar ASCII.
+          - Menghemat ruang ( dalam konteks tertentu ) karena ASCII hanya menggunakan 7 bit per karakter. 
+
+     Tetapi perlu diingat: ASCII tidak mendukung karkater non-latin seperti huruf arab, Cina atau bahkan simbol mata uang seperti "£". jadi dalam pengembangan web modern, UTF-8 hampir selalu menjadi pilihan yang lebih aman dan fleksibel.
+     kalau kamu bikin halaman web pakai teks bahasa indonesia atau campuran simbol lainnya, pengkodean UTF-8 jauh lebih cocok.
 -->
