@@ -1,0 +1,169 @@
+<!-- HTML FORM ELEMENTS -->
+<!-- Bab ini menguraikan semua elemen formulir HTML yang berbeda. -->
+
+<!-- ELEMEN HTML <form> -->
+<!-- Elemen HTML <form> dapat berisi satu atau lebih elemen formulir berikut : -->
+
+<input>
+<label>
+<select>
+<textarea>
+<button>
+<fieldset>
+<legend>
+<datalist>
+<output>
+<option>
+<optgroup>
+
+
+<!-- Elemen <input> -->
+<!-- Salah satu elemen bentuk yang paling banyak digunakan adalah <input> elemen. 
+    
+     Elemen <input> dapat ditampilkan dalam beberapa cara, tergantung pada "type" atributnya. 
+-->
+<!-- Contoh -->
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="fname">
+<br>
+
+
+<!-- Elemen <label> -->
+<!-- Elemen <label> mendefinisikan label untuk beberapa elemen formulir. 
+
+     Elemen <label> ini berguna bagi pengguna pembaca layar, karena pembaca layar akan membacakan label dengan suara keras saat pengguna fokus pada elemen input.
+
+     Elemen ini <label> juga membantu pengguna yang mengalami kesulitan mengklik pada area yang sangat kecil ( seperti tombol rafio atau kotak centang ) - karena saat pengguna mengklik teks dalam <label> elemen, tombol radio/kotak centang akan diaktifkan atau tidak.
+
+     Atribut "for" tag <label> harus sama dengan "id" atribut <input> elemen untuk mengikatnya bersama.
+-->
+
+
+<!-- Elemen <select> -->
+<!-- Elemen ini <select> mendefinisikan daftar drop-down: -->
+<!-- Contoh -->
+<label for="cars">Choose a car:</label>
+<select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+</select>
+<br>
+<!-- Elemen <option> mendefinisikan opsi yang dapat dipilih.
+    
+     Secara default, item pertama pada daftar drop-down dipilih.
+
+     Untuk menentukan opsi yang telah dipilih sebelumnya, tambahkan "selected" atribut ke opsi tersebut :
+-->
+<!-- Contoh -->
+<option value="fiat" selected>Fiat</option>
+<br>
+
+<!-- NILAI YANG TERLIHAT : -->
+<!-- Gunakan size atribut untuk menentukan jumlah nilai yang terlihat :  -->
+<!-- Contoh -->
+<label for="cars">Chosee a car:</label>
+<select id="cars" name="cars" size="3">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+</select>
+<br>
+
+<!-- IZINKAN BEBERAPA PILIHAN : -->
+<!-- Gunakan "multiple" atribut untuk mengizinkan pengguna memilih lebih dari satu nilai : -->
+<!-- Contoh -->
+<label for="cars">Choose a car:</label>
+<select id="cars" name="cars" size="4" multiple>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+</select>
+<br>
+
+<!-- ELEMEN <textarea> -->
+<!-- Elemen ini <textarea> mendefinisikanbidang input multi-baris ( area teks ): -->
+<!-- Contoh -->
+<textarea name="message" rows="10" cols="30">
+    The cat was playing in the garden.
+</textarea>
+ <br>
+<!-- Atribut "rows" menentukan jumlah baris yang terlihat di area teks. -->
+<!-- Atribut "cols" menentukan lebar area teks yang terlihat. -->
+<!-- Contoh -->
+<texarea name="message" style="width:200px; height:600px;">
+    The cat was playing in the garden.
+</texarea>
+<br>
+
+<!-- ELEMEN <button> -->
+<!-- elemen ini <button> mendefinisikan tombol yang dapat diklik: -->
+<!-- Contoh -->
+<button type="button" onclick="alert('Hello World')">Click Me!</button>
+<br>
+<!-- Catatan : Selalu tentukan "type" atribut elemen tombol. berbagai browser mungkin menggunakna tipe default yang berbeda untuk elemen tombol.  -->
+
+
+<!-- ELEMEN <fieldset> dan <legend> -->
+<!-- Elemen ini <fieldset> digunakan untuk mengelompokkan data terkait dalam suatu formulir.
+
+     Elemen <legend> mendefinisikan judul untuk <fieldset> elemen tersebut.
+-->
+<!-- Contoh -->
+<form action="/action_page.php">
+    <fieldset>
+        <legend>Personalia :</legend>
+        <label for="fname">First name</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </fieldset>
+</form>
+
+
+<!-- ELEMEN <datalist> -->
+<!-- Elemen <datalist> menentukan daftar opsi yang telah ditetapkan sebelumnya untuk suatu <input> elemen.
+
+     Pengguna akan melihat daftar drop-down berisi pilihan yang telah ditetapkan saat mereka memasukkan data.
+
+     atribut "list" elemen <input> harus mengacu pada "id" atribut elemen <datalist>.
+-->
+<!-- Contoh -->
+<form action="/action_page.php">
+    <input list="browsers">
+    <datalist id="browsers">
+        <option value="Edge">Edge</option>
+        <option value="Firefoc">Firefox</option>
+        <option value="Chrome">Chrome</option>
+        <option value="Opera">Opera</option>
+        <option value="Safari">Safari</option>
+    </datalist>
+</form>
+
+
+<!-- Elemen <output> -->
+<!-- Elemen Tersebut <output> merepresentasikan hasil perhitungan ( seperti perhitungan yang dilakukan oleh skrip ). -->
+<!-- Contoh -->
+<!-- lakukan perhitungan dan tampilkan dalam <output> elemen :  -->
+<form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0
+    <input type="range" id="a" name="a" value="50">
+    100 +
+    <input type="number" id="b" name="b" value="50">
+    =
+    <output name="x" for="a b"></output>
+    <br><br>
+    <input type="Submit">    
+</form>
+
+
+
+<!--  ELEMEN Formulir HTML -->
+<!--  
+      Tag                           Description
+      <form>
+-->
