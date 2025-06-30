@@ -174,3 +174,170 @@ penangan formulir ditentukan dalam atribut formulir action :
 <form>
     <input type="image" src="img_submit.gif" alt="Sumbit" width="48" height="48">
 </form>
+
+
+<h1>Jenis input File</h1>
+<input type="file"><p>Menentukan bidang pemilihan berkas dan tombol "Telusuri" untuk unggahan berkas.</p>
+<p>Contoh</p>
+<form>
+    <label for="myfile">Select a file:</label>
+    <input type="file" id="myfile" name="myfile">
+</form>
+
+
+<h1>Tipe input Tersembunyi</h1>
+<input type="hidden"><p>Mendefinisikan bidang input tersembunyi ( tidak terlihat oleh pengguna ) .</p>
+<p>Bidang tersembunyi memungkinkan pengembang web menyertakan data yang tidak dapat dilihat atau diubah oleh pengguna saat foemulir dikirimkan.<br>
+Bidang tersembunyi sering kali menyimpan catatan basis data apa yang perlu diperbarui saat formulir dikirimkan.<br>
+<b>Catatan :</b>Meskipun nilainya tidak ditampilkan kepada pengguna dalam konten halaman, nilainya terlihat (dan dapat diedit) menggunakan alat pengembang browser atau fungsi "lihat sumber". jangan gunakan input tersembunyi sebagai bentuk keamanan!
+</p>
+<p>Contoh</p>
+<form>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <input type="hidden" id="custId" name="custId" value="3487">
+    <input type="submit" value="Submit">
+</form>
+
+
+<h1>Tipe input Bulan</h1>
+<input type="month"><p>Memungkinkan pengguna untuk memilih bulan dan tahun bergantung pada dukungan browser, pemilih tanggal dapat muncul di kolom input.</p>
+<p>Contoh</p>
+<form>
+    <label for="bdaymonth">Birthday (month and year):</label>
+    <input type="month" id="bdaymonth" name="bdaymonth">
+</form>
+
+
+<h1>Tipe input Angka</h1>
+<input type="number"><p>Mendefinisikan bidang input <b>Numerik.</b><br>
+Anda juga dapat menetapkan batasan pada nomor apa saja yang diterima.<br>
+contoh berikut menampilkan bidang input numerik, tempat anda dapat memasukkan nilai dari 1 hingga 5 :
+</p>
+<p>Contoh</p>
+<form>
+    <label for="quantity">Quantity (between 1 and 5) :</label>
+    <input type="number" id="quantity" name="quantity" mi="1" max="5">
+</form>
+
+
+<h1>Pembatasan input</h1>
+<p>Berikut adalah daftar beberapa batasan input umum :</p>
+<table>
+   <tr>
+    <th>Attribute</th>
+    <th>Description</th>
+   </tr>
+   <tr>
+    <th>cheked</th>
+    <th>Menentukan bahwa bidang input harus dipilih terlebih dahulu saat halaman dimuat (untuk type="checkbox" atau type="radio") </th>
+   </tr>
+   <tr>
+    <th>disabled</th>
+    <th>Menentukan bahwa bidang input harus dinonaktifkan</th>
+   </tr>
+   <tr>
+    <th>Max</th>
+    <th>Menentukan nilai maksimum untuk bidang input</th>
+   </tr>
+   <tr>
+    <th>Maxlength</th>
+    <th>Menentukan jumlah karakter maksimum untuk bidang input</th>
+   </tr>
+   <tr>
+    <th>Min</th>
+    <th>Menentukan nilai minium untuk bidang input</th>
+   </tr>
+   <tr>
+    <th>Pattern</th>
+    <th>Menentukan ekspresi reguler untuk memeriksa nilai input terhadap</th>
+   </tr>
+   <tr>
+    <th>Readonly</th>
+    <th>Menentukan bahwa bidang input hanya dapat dibaca ( tidak dapat diubah )</th>
+   </tr>
+   <tr>
+    <th>Required</th>
+    <th>Menentukan bahwa kolom input diperlukan ( harus disii )</th>
+   </tr>
+   <tr>
+    <th>Size</th>
+    <th>Menentukan lebar ( dalam karakter ) bidang input</th>
+   </tr>
+   <tr>
+    <th>Step</th>
+    <th>Menentukan interval nomor legal untuk bidang input</th>
+   </tr>
+   <tr>
+    <th>Value</th>
+    <th>Menentukan nilai default untuk bidang input</th>
+   </tr>
+</table>
+<p>Anda akan mempelajari lebih lanjut tentang pembatasan input pada bab berikutnya.</p>
+<p>Contoh berikut menampilkan kolom input numerik, tempat anda dapat memasukkan nilai dari 0 hingga 100, dalam langkah 1.0 Nilai default adalah 30 :</p>
+<p>Contoh</p>
+<form>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="0" max="100" step-="10" value="30">
+</form>
+
+
+<h1>Rentang Jenis Input</h1>
+<input type="range"><p>Menentukan kontrol untuk memasukkan angka yang nilai pastinya tidak penting ( seperti kontrol slider ). Rentang default adalah 0 hingga 100. Namun, anda dapat menetapkan batasan pada angka yang diterima dengan atribut "min","max" dan "step" :</p>
+<p>Contoh</p>
+<form>
+    <label for="vol">Volume (between 0 and 50):</label>
+    <input type="range" id="vol" name="vol" min="0" max="50">
+</form>
+
+
+<h1>Pencarian Jenis Input</h1>
+<input type="search"><p>Digunakan untuk bidang pencarian ( bidang pencarian berperilaku seperti bidang teks biasa ).</p>
+<p>Contoh</p>
+<form>
+    <label for="gsearch">Search Google:</label>
+    <input type="search" id="gsearch" name="gsearch">
+</form>
+
+
+<h1>Tipe Input Telp</h1>
+<input type="tel"><p>Digunakan untuk bidang input yang harus berisi nomor telepon</p>
+<p>contoh</p>
+<form>
+    <label for="phone">Enter your phone number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+</form>
+
+
+<h1>Jenis Input Waktu</h1>
+<input type="time"><p>Memungkinkan pengguna untuk memilih waktu ( tanpa zona waktu )<br>
+Bergantung pada dukungan browser, pemilih waktu dapat muncul di kolom input.
+</p>
+<p>Contoh</p>
+<form>
+    <label for="appt">Select a time:</label>
+    <input type="time" id="appt" name="appt"> 
+</form>
+
+
+<h1>Jenis input URL</h1>
+<input type="url"><p>Digunakan untuk bidang yang harus berisi alamat URL.<br>
+Bergantung pada dukungan browser, bidang url dapat secara otomatis divalidasi saat dikirimkan.<br>
+Beberapa telepon pintar mengenali jenis url, dan menambahkan ".com" ke papan ketik untuk mencocokkan masukan url.
+</p>
+<p>Contoh</p>
+<form>
+    <label for="homepage">Add your homepage:</label>
+    <input type="url" id="homepage" name="homepage">
+</form>
+
+
+<h1>Tipe Input Minggu</h1>
+<input type="week"><p>Memungkinkan pengguna untuk memilih minggu dan tahun.<br>
+Bergantung pada dukungan browser, pemilih tanggal dapat muncul di kolom input.
+</p>
+<p>Contoh</p>
+<form>
+    <label for="week">Select a week</label>
+    <input type="week" id="week" name="week">
+</form>
