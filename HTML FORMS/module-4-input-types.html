@@ -41,3 +41,26 @@
 
 
 <!-- TIPE INPUT KATA SANDI -->
+<input type="password"> Mendefinisikan bidang kata sandi :
+<!-- Contoh -->
+<form>
+    <label for="username">Username</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="pwd">Password</label><br>
+    <input type="password" id="pwd" name="pwd">
+</form>
+<!-- Karakter dalam kolom kata sandi ditutup ( ditampilkan sebagai tanda bintang atau lingkaran ) -->
+
+
+<!-- TIPE INPUT KIRIM -->
+<input type="submit"> Mendefinisikan tombol untuk mengirimkan data formulir ke form-handler. 
+Penanganan formulir biasanya berupa halaman server dengan skrip untuk memproses data masukan.
+penangan formulir ditentukan dalam atribut formulir action : 
+<!-- Contoh -->
+<form action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+</form>
