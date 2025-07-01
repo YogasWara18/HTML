@@ -73,7 +73,7 @@ Nilai default untuk <b>Size</b> adalah 20.<br>
 </form>
 
 
-<h2>The min and max Attributes</h2>
+<h2>The min and max Attributes ( min &  max Attribute ) </h2>
 <p>Input <b>min</b> dan <b>max</b> atribut menentukan nilai minimum dan maksimum untuk bidang input.<br>
 Atribut <b>min</b> dan <b>max</b> berfungsi dengan tipe input berikut: angka, rentang, tanggal, tanggal waktu lokal, bulan, waktu, dan minggu.<br>
 <b>Kiat :</b> Gunakan taribut max dan min secara bersamaan untuk membuat rentang nilai legal.
@@ -101,4 +101,118 @@ Atribut ini <b>multiple</b> berfungsi dengan tipe input berikut : email dan file
 <form>
     <label for="files">Select files:</label>
     <input type="file" id="files" name="files" multiple>
+</form>
+
+
+<h2>The pattern Attribute ( Atribut Pola ) </h2>
+<p>Atribut input <b>pattern</b> menentukan ekspresi reguler yang akan memeriksa nilai bidang input saat formulir dikirimkan.<br>
+Atribut ini <b>pattern</b> berfungsi dengan jenis input berikut : Teks, tanggal, pencarian, url, telp, email, dan kata sandi.<br>
+<b>Kiat : Gunakan atribut</b> judul global untuk mendeskripsikan pola guna membantu pengguna. 
+<b>Tip :</b> pelajarai lebih lanjut tentang ekspresi reguler dalam tutorial JavaScript kami.
+</p>
+<p>Contoh</p>
+<p>Bidang input yang hanya dapat berisi tiga huruf ( tanpa angka atau karakter khusus ) :</p>
+<form>
+    <label for="country_code">Country code :</label>
+    <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+</form>
+
+
+<h2>The Placeholder attribute ( Atribut Placeholder ) </h2>
+<p>Atribut input <b>placeholder</b> menentukan petunjuk singkat yang menjelaskan nilai yang diharapkan dari bidang input ( nilai sampel atau deskripsi singkat dari format yang diharapkan ). <br>
+prtunjuk singkat ditampilkan di kolom input sebelum pengguna memasukkan nilai. <br>
+Atribut ini <b>placeholder</b> berfungsi dengan jenis input berikut: teks, pencarian, url, nomor, telp, email, dan kata sandi.
+</p>
+<p>Contoh</p>
+<p>Bidang masukan dengan teks pengganti :</p>
+<form>
+    <label for="phone">Enter a phone number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+</form>
+
+
+<h2>The required Attribute ( Atribut yang dibutuhkan ) </h2>
+<p>Atribut input <b>required</b> menentukan bahwa bidang input harus diisi sebelum mengirimkan formulir. <br>
+Atribut ini <b>required</b> berfungsi dengan jenis input berikut: teks, pencarian, url, tel, email, kata sandi, pemilih tanggal, angka, kotak centang, radio, dan file. 
+</p>
+<p>Contoh</p>
+<p>Bidang masukan yang wajib diisi</p>
+<form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+</form>
+
+
+<h2>The step Attribute ( Step Attribute ) </h2>
+<p>Atribut input <b>step</b> menentukan interval nomor legal untuk bidang input. <br>
+Contoh : jika langkah="3", angka yang sah bisa berupa -3, 0, 3, 6, dst. <br>
+<b>Tip :</b> atribut ini dapat digunakan bersama dengan atribut max dan min untuk membuat rentang nilai legal. <br>
+Atribut ini <b>step</b> berfungsi dengan tipe input berikut : angka, rentang, tanggal, datetime-lokal, bulan, waktu, dan mimggu.
+</p>
+<p>contoh</p>
+<p>Bidang input dengan interval nomor legal yang ditentukan :</p>
+<form>
+    <label for="points">Points:</label>
+    <input type="number" id="points" name="points" step="2">
+</form>
+<b>Catatan:</b><p>Pembatasan input tidak sepenuhnya aman, dan JavaScript menyediakan banyak cara untuk menambahkan input ilegal. Untuk membatasi input dengan aman, input juga harus diperiksa oleh penerima ( server )! </p>
+
+
+<h2>The autofocus Attribute ( Atribut autofokus ) </h2>
+<p>Atribut input <b>autofocus</b> menentukan bahwa bidang input harus secara otomatis mendapatkan fokus saat halaman dimuat.</p>
+<p>Contoh</p>
+<p>Biarkan kolom input"Nama Depan" Secara otomatis mendapatkan fokus saat halaman dimuat :</p>
+<form> 
+    <label for="fname">First name:</label> <br>
+    <input type="text" id="fname" name="fname" autofocus> <br>
+    <label for="lname">Last name:</label> <br>
+    <input type="text" id="lname" name="lname">
+</form>
+
+
+<h2>The height and width attributes ( Attribut Tinggi dan Lebar ) </h2>
+<p>input <b>height</b> dan <b>width</b> atribut menentukan tinggi dan lebar suatu ( <input type="image"> ) elemen. </p>
+<b>Kiat :</b><p>Selalu tentukan atribut tinggi dan lebar untuk gambar. Jika tinggi dan lebar ditetapkan, ruang yang diperlukan untuk gambar akan dicadangkan saat halaman dimuat. Tanpa atribut ini, browser tidak mengetahui ukuran gambar, dan tidak dapat menyediakan ruang yang sesuai untuknya. Efeknya adalah tata letak halaman akan berubah selama pemuatan ( saat gambar dimuat ).</p>
+<p>Contoh</p>
+<p>Tentukan gambar sebagai tombl kirim, dengan atribut tinggi dan lebar :</p>
+<form>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="image" src="img_submit,gif" alt="Submit" width="48" height="48">
+</form>
+
+
+<h2>The list Attribute ( atribut daftar )</h2>
+<p>Atribut input <b>list</b> merujuk pada <b>< datalist ></b> elemen yang berisi opsi yang telah ditetapkan sebelumnya untuk elemen < input ></p>
+<p>Contoh</p>
+<p>Elemen < input > dengan nilai yang telah ditentukan sebelumnya dalam < datalist > :</p>
+<form>
+    <input list="browsers">
+    <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+    </datalist>
+</form>
+
+
+<h2>The Autocomplete Attribute ( Atribut pelengkapan otomatis ) </h2>
+<p>Atribut input <b>autocomplete</b> mentukan apakah formulir atau bidang input harus mengaktifkan atau menonaktifkan pelengkapan otomatis. <br>
+pelengkapan otomatis memungkinkan browser untuk memprediksi nilai. saat pengguna mulai mengetik di kolom, browser akan menampilkan opsi untuk mengisi kolom, berdasarkan nilai yang diketik sebelumnya. <br>
+Atribut ini <b>autocomplete</b> berfungsi dengan jenis < form > berikut < input > ; teks, pencarian , url, tel, emeil, kata sandi, pemilih tanggal, rantang, dan warna. 
+</p>
+<p>Contoh</p>
+<p>Formulir HTML dengan perlengkapan otomatis aktif, dan nonaktif untuk satu bidang input : </p>
+<form action="/action_page.php" autocomplete="on">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" autocomplete="off"><br><br>
+    <input type="submit" value="Submit">
 </form>
