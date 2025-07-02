@@ -15,3 +15,84 @@ Nilai atribut ini harus sama dengan atribut id elemen < form > yang menjadi mili
 
 <label for="lname">Last name:</label>
 <input type="text" id="lname" name="lname" form="form1">
+
+
+<h2>The Formaction Attribute ( Atribut pembentukan ) </h2>
+<p>Atribut input <b>formaction</b> menentukan URL file yang akan memproses input saat formulir dikirimkan <br>
+<b>Catatan :</b> Atribut ini menggantikan <b>action</b> atribut <b> < form > </b> elemen <br>
+Atribut ini <b>formaction</b> berfungsi dengan tipe input berikut: kirim dan gambar
+</p>
+<p>Contoh</p>
+<p>Formulir HTML dengna dua tombol kirim, dengan tindakan yang berbeda :</p>
+<form action="/action_page.php">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Submit">
+    <input type="submit" formaction="/action_page.php" value="Submit as Admin">
+</form>
+
+
+<h2>The Formenctype Attribute ( Atribut formenctype ) </h2>
+<p>Atribut input <b>formenctype</b> menentukan bagaimana data formulir haru dikodekan saat dikirimkan ( hanya untuk formulir dengan method="post" ). <br>
+<b>Catatan : </b> Atribut menggantikan atribut enctype elemen < form >. <br>
+Atribut ini <b>formenctype</b> berfungsi dengan tipe input berikut : kirim dan gambar.
+</p>
+<p>Contoh</p>
+<p>Formulir dengan dua tombol kirim. Tombol pertama mengirimkan data formulir dengan penyandian default, tombol kedua mengirimkan data formulir yang disandikan sebagai "multipart/form-data" :</p>
+<form action="/action_page_binary.asp" method="post">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <input type="submit" value="Submit">
+    <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data">
+</form>
+
+
+<h2>The formmethod Attribute ( Atribut formmethod ) </h2>
+<p>Atribut ini <b>formmethod</b> mendefinisikan metode HTTP untuk mengirim data formulir ke URL tindakan. <br>
+<b>Catatan :</b> Atribut ini menggantikan atribut metode <b> < form > </b> elemen. <br>
+Atribut ini <b>formmethod</b> berfungsi dengan tipe input berikut : kirim dan gambar. <br>
+Data formulir dapat dikirim sebagai variabel URL ( metode="dapatkan") atau sebagai transaksi posting HTTP(metode="posting"). <br><br>
+<b>Catatan tentang metode "get" :</b>
+<ul>
+    <li>Metode ini menambahkan data formulir ke URL dalam pasangan nama/nilai.</li>
+    <li>Metode ini berguna untuk pengiriman formulir dimana pengguna ingin menandai hasilnya.</li>
+    <li>Ada batasan berapa banyak data yang dapat anda tempatkan di URL ( bervariasi antara browser ), oleh karena itu, Anda tidak dapat memastikan bahwa semua data formulir akan ditransfer dengan benar.</li>
+    <li>Jangan pernah menggunakan metode "get" untuk memberikan informasi sensitif! ( kata sandi atau informasi sensitif lainnya akan terlihat di bilah alamat browser ) </li>
+</ul>
+
+<b>Catatan tentang metode "post" :</b>
+<ul>
+    <li>Metode ini mengirimkan data formulir sebagai transaksi posting HTTP.</li>
+    <li>Pengiriman formulir dengan metode "post" tidak dapat ditandai.</li>
+    <li>Metode "post" lebih kuat dan aman daripada "get", dan metode "post" tidak memiliki batasan ukuran.</li>
+</ul>
+</p>
+<p>Contoh</p>
+<p>Formulir dengan dua tombol kirim. Tombol pertama mengirimkan data formulir dengan metode="get". Tombol kedua mengirimkan data foemulir dengan metode="post" :</p>
+<form action="/action_page.php" method="get">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Submit using GET">
+    <input type="submit" formmethod="post" value="Submit using POST">
+</form>
+
+
+<h2>The formtarget Attribute ( formtarget Atribut ) </h2>
+<p>Atribut ini <b>formtarget</b> menentukan nama atau kata kunci yang menunjukkan tempat menampilkan respons yang diterima setelah mengirimkan formulir. <br>
+<b>Catatan :</b> Atribut ini menggantikan atribut target <b>< form ></b> elemen. <br>
+Atribut ini <b>formtarget</b> berfungsi dengan tipe intput berikut : kirim dan gambar.
+</p>
+<p>Contoh</p>
+<p>Formulir dengan dua tombol kirim, dengan jendela target yang berbeda :</p>
+<form action="/action-page.php">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Submit">
+    <input type="submit" formtarget="_blank" value="Submit to a bew window/tab">
+</form>
