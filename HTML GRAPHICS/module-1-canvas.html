@@ -1,1 +1,45 @@
 <h1>HTML Canvas Graphics</h1>
+<p>Elemen HTML <b>< canvas ></b> digunakan untuk menggambar grafik pada halaman web. <br><br>
+Grafik tersebut memperlihatkan empat elemen : Persegi panjang, Persegi panjang gradien, Persegi panjang mumtiwarna, dan teks multiwarna.
+</p>
+
+<h2>Apa itu HTML Canvas?</h2>
+<p>Elemen HTML <b>< canvas ></b> digunakan untuk menggambar grafik, dengan cepat, melalui JavaScript. <br><br>
+Elemen ini <b>< canvas ></b> hanya merupakan wadah untuk grafik. Anda harus menggunakan JavaScript untuk benar-benar menggambar grafik. <br><br>
+Canvas memiliki beberapa metode untuk menggambar jalur, kotak, lingkaran, teks, dan menambahkan gambar. <br><br>
+Canvas didukung oleh semua peramban utama.
+</p>
+
+<h2>Contoh Kanvas</h2>
+<p>Kanvas adalah area persegi panjang pada halaman HTML. secara default, kanvas tidak memiliki batas dan konten. <br><br>
+markupnya terlihat seperti ini :
+</p>
+<canvas id="myCanvas" width="200" height="100"></canvas>
+<b>Catatan :</b><p>Selalu tentukan <b>id</b> atribut ( yang akan dirujuk dalam skrip ), dan <b>width</b> atribut <b>height</b> untuk menentukan ukuran canvas. Untuk menambahkan batas, gunakan <b>style</b> atribut.</p> <br>
+<p>Contoh</p>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+
+
+<h2>Tambahkan JavaScript</h2>
+<p>Setelah membuat area kanvas persegi panjang, Anda harus menambahkan JavaScript untuk menggambarnya. <br>
+berikut beberapa contohnya :
+</p>
+<p>Menarik garis</p>
+<canvas id="myCanvas1" width="200" height="100" style="border:1px solid #000000;"></canvas>
+<script>
+    var c = document.getElementById("myCanvas1");
+    var ctx = c.getContext("2d");
+    ctx.moveTo(0, 0);
+    ctx.lineTo(200, 100);
+    ctx.stroke(); 
+</script>
+
+<p>Menggambar lingkaran</p>
+<canvas id="myCanvas2" width="200" height="100" style="border:1px solid #000000;"></canvas>
+<script>
+    var c = document.getElementById("myCanvas2");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+    ctx.stroke();
+</script>
