@@ -52,3 +52,60 @@ berikut beberapa contohnya :
     cty.font = "30px Arial";
     cty.fillText("Hello World", 10, 50);
 </script>
+
+<p>Teks Goresan</p>
+<canvas id="myCanvas4" width="200" height="100" style="border:1px solid #000000;"></canvas>
+<script>
+    var e = document.getElementById("myCanvas4");
+    var ctr = e.getContext("2d");
+    ctr.font = "30px Arial";
+    ctr.strokeText("Hello World", 10, 50);
+</script>
+
+<p>Menggambar Gradien Linier</p>
+<canvas id="myCanvas5" width="200" height="100" style="border:1px solid #000000;"></canvas>
+<script>
+    var t = document.getElementById("myCanvas5");
+    var ctt = t.getContext("2d");
+
+    // Create gradient
+    var grd = ctt.createLinearGradient(0, 0, 200, 0);
+    grd.addColorStop(0, "red");
+    grd.addColorStop(1, "white");
+
+    // Fill with gradient
+    ctt.fillStyle = grd;
+    ctt.fillRect(10, 10, 150, 80);
+</script>
+
+<p>Menggambar Gradien Lingkaran</p>
+<canvas id="myCanvas6" width="200" height="100" style="border:1px solid #000000;"></canvas>
+<script>
+    var w = document.getElementById("myCanvas6");
+    var ctw = w.getContext("2d");
+
+    // Create gradient
+    var grd = ctw.createRadialGradient(75, 50, 5, 90, 60, 100);
+    grd.addColorStop(0, "red");
+    grd.addColorStop(1, "white");
+
+    // Fill with gradient
+    ctw.fillStyle = grd;
+    ctw.fillRect(10, 10, 150, 80);
+</script>
+
+<p>Menggambar Gambar</p>
+<img  id="computer" src="/image/computer.jpg" alt="Computer" width="220" height="277">
+
+<canvas id="myCanvas7" width="250" height="300" style="border:1px solid #d3d3d3;"></canvas>
+
+<p><button onclik="myCanvas7()">Try it</button></p>
+
+<script>
+    function myCanvas7() {
+        var q = document.getElementById("myCanvas7");
+        var ctq = q.getContext("2d");
+        var img = document.getElementById("computer");
+        ctq.drawImage(img,10,10);
+    }
+</script>
