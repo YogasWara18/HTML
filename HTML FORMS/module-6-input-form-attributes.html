@@ -84,7 +84,7 @@ Data formulir dapat dikirim sebagai variabel URL ( metode="dapatkan") atau sebag
 <h2>The formtarget Attribute ( formtarget Atribut ) </h2>
 <p>Atribut ini <b>formtarget</b> menentukan nama atau kata kunci yang menunjukkan tempat menampilkan respons yang diterima setelah mengirimkan formulir. <br>
 <b>Catatan :</b> Atribut ini menggantikan atribut target <b>< form ></b> elemen. <br>
-Atribut ini <b>formtarget</b> berfungsi dengan tipe intput berikut : kirim dan gambar.
+Atribut ini <b>formtarget</b> berfungsi dengan tipe input berikut : kirim dan gambar.
 </p>
 <p>Contoh</p>
 <p>Formulir dengan dua tombol kirim, dengan jendela target yang berbeda :</p>
@@ -95,4 +95,31 @@ Atribut ini <b>formtarget</b> berfungsi dengan tipe intput berikut : kirim dan g
     <input type="text" id="lname" name="lname"><br><br>
     <input type="submit" value="Submit">
     <input type="submit" formtarget="_blank" value="Submit to a bew window/tab">
+</form>
+
+
+<h2>The Formnovalidate Attribute (Atribut Formnovalidate ) </h2>
+<p>Atribut ini <b>formnovalidate</b> menentukan bahwa elemen < input > tidak boleh divalidasi saat dikirimkan <br>
+<b>Catatan :</b> Atribut ini menggantikan atribut novalidate elemen < form > <br>
+Atribut ini <b>formnovalidate</b> berfungsi dengan tipe input berikut: kirim.
+</p>
+<p>Contoh</p>
+<p>Formulir dengan dua tombol kirim ( dengan dan tanpa validasi ) </p>
+<form action="/action_page.php">
+    <label for="email">Enter your email :</label>
+    <input type="email" id="email" name="email"> <br><br>
+    <input type="sumbit" value="Submit">
+    <input type="submit" formnovalidate="formnovalidate" value="Submit without validation">
+</form>
+
+
+<h2>The novalidate Attribute ( Atribut novalidate ) </h2>
+<p>Atribut <b>novalidate</b> adalah <b> < form ></b> atribut.</p>
+<p>Bila ada, novalidate menentukan bahwa semua data formulir tidak boleh divalidasi saat dikirimkan. </p>
+<p>Contoh</p>
+<p>Tentukan bahwa tidak ada data formulir yang akan divalidasi saat dikirimkan :</p>
+<form action="/action_page.php" novalidate>
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <input type="submit" value="Submit">
 </form>
