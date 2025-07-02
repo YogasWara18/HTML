@@ -32,11 +32,55 @@ SVG memiliki beberapa metode untuk menggambar jalur, persegi panjang, lingkaran,
 </svg>
 
 <h2>Persegi panjang SVG dengan Opacity dan sudut membulat</h2>
+<body>
 <svg width="400" height="180">
     <rect t="50" i="20" rx="20" ry="20" width="150" height="150" style="fill:red;stroke:black;stroke-width:5;opacity:0.5"/>
 </svg>
+</body>
 
 <h2>Bintang SVG</h2>
+<body>
 <svg width="300" height="200">
     <polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;"/>
 </svg>
+
+
+<h2>SVG Gradien Elips dan Teks </h2>
+<svg height="130" width="500">
+        <defs>
+            <linearGradient id="grad1">
+                <stop offset="0%" stop-color="yellow"/>
+                <stop offset="100%" stop-color="red"/>
+            </linearGradient>
+        </defs>
+        <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)"/>
+        <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+</svg>
+
+
+
+<h2>Perbedan Antara SVG dan Canvas</h2>
+<p>Svg adalah bahasa untuk menggambarkan grafik 2D dam XML, Sementara Canvas menggambarkan grafik 2D secara cepat ( dengan JavaScript ) . <br>
+SVG berbasis XML, yang berarti bahwa setiap elemen tersedia dalam SVG DOM. Anda dapat melampirkan pengendali peristiwa JavaScript ke grafik SVG. <br>
+Dalam SVG, Setiap bentuk yang digambarkan akan diingat sebagai sebuah objek. jika atribut objek SVG diubah, browser dapat secara otomatis merender ulang bentuk tersebut. <br>
+kanvas ditampilkan piksel demi piksel. Di kanvas, setelah grafik digambar, grafik tersebut akan dilupakan oleh browser. jika posisinya harus diubah, seluruh pemandangan perlu digambar ulang, termasuk objek apa pun yang mungkin telah tertutup oleh grafik. 
+</p>
+
+
+<h2>Perbandingan SVG dan Canvas</h2>
+<p>Tabel di bawah menunjukkan beberapa perbedaan penting antara Canvas dan SVG :</p>
+<ul>Svg
+    <li>Resolusi independen</li>
+    <li>Dukungan untuk event handler</li>
+    <li>Kemampuan rendering teks yang baik</li>
+    <li>Rendering lambat jika rumit</li>
+    <li>Tidak cocok untuk aplikasi game</li>
+</ul>
+<ul>Canvas
+    <li>Bergantung pada resolusi</li>
+    <li>Tidak ada dukungan untuk event handler</li>
+    <li>Kemampuan rendering teks yang buruk</li>
+    <li>Anda dapat menyimpan gambar yang dihasilkan sebagai .png atau .jpg</li>
+    <li>Sangat cocok untuk game yang membutuhkan grafis intensif</li>
+</ul>
+</body>
