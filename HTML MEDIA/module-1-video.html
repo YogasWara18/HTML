@@ -29,5 +29,39 @@
             <source src="movie.ogg" type="video/ogg">
             Your browser does not support the video tag .
         </video>
+
+
+        <h2>Cara kerjanya</h2>
+        <p>Atribut <b>Controls</b> menambahkan kontrol video, seperti putar, jeda, dan volume. <br>
+        Sebaiknya selalu sertakan <b>width</b> atribut <b>height</b>. Jika tinggi dan lebar tidak ditetapkan, halaman mungkin berkedip saat video dimuat. <br>
+        Elemen ini <b>< source ></b> memungkinkan anda menentukan file video alternatif yang dapat dipilih oleh browser. Browser akan menggunakan format pertama yang dikenali. <br>
+        Teks antara tag <b>< video ></b> dan <b>< / video ></b> hanya akan ditampilkan di browser yang tidak mendukung <b>< video ></b> elemen tersebut.
+        </p>
+
+
+        <h2>HTML < video > Putar Otomatis </h2>
+        <p>Untuk memulai video secara otomatis, gunakan <b>autoplay</b> atribut:</p>
+        <p>Contoh :</p>
+        <video width="320" height="240" autoplay>
+            <source src="/video1.mp4" type="video/mp4">
+            <source src="/video1.ogg" type="video/ogg">
+            Your browser does not support the video tag. 
+        </video>
+       <p><b>Catatan :</b>Peramban Chromium tidak mengizinkan pemutaran otomatis dalam kebanyakan kasus. Namun, pemutaran otomatis tanpa suara selalu diizinkan.</p> <br>
+        <p>Tambahkan <b>muted</b> setelah <b>autoplay</b> untuk membiarkan video anda mulai diputar secara otomatis ( tetapi tanpa suara ) </p>
+        <p>Contoh</p>
+        <video width="320" height="240" autoplay muted>
+            <source src="/video2.mp4" type="video/mp4">
+            <source src="/video2.ogg" type="video/ogg">
+        </video>
+
+
+        <h2>Video HTML - Metode, Properti, dan Peristiwa</h2>
+        <p>DOM HTML mendefinisikan metode, properti, dan peristiwa untuk <b> < video > </b> elemen. <br>
+        Ini memungkinkan anda memuat, memutar, dan menjeda video, serta mengatur durasi dan volume. <br>
+        Ada juga peristiwa DOM yang dapat memberitahukan Anda saat video mulai diputar, dijeda, dll.
+        </p>
+        <p>Contoh : Menggunakan JavaScript</p>
+        
     </body>
 </html>
