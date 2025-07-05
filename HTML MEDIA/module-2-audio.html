@@ -27,5 +27,65 @@
 
 
         <h2>HTML < audio > Putar otomatis</h2>
+        <p>Untuk memulai file audio secara otomatis, gunakan <b>autoplay</b> atribut:</p>
+        <p>Contoh</p>
+        <audio controls autoplay>
+            <source src="mouse.ogg" type="audio/ogg">
+            <source src="mouse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <p><b>Catatan :</b> Peramban chromium tidak mengizinkan pemutaran otomatis dalam kebanyakan kasus. Namun, pemutaran otomatis tanpa suara selalu diizinkan.</p>
+
+        <p>Tambahkan <b>muted</b> setelah <b>autoplay</b> untuk membiarkan berkas audio Anda mulai diputar secara otomatis ( tetapi tanpa suara ) :</p>
+        <p>Contoh</p>
+        <audio controls autoplay muted>
+            <source src="cat.ogg" type="audio/ogg">
+            <source src="cat.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        
+        <h2>Audio HTML - Jenis Media</h2>
+        <table style="border:1px solid #000000;">
+            <tr>
+                <th>file format</th>
+                <th>Media Type</th>
+            </tr>
+            <tr>
+                <td>MP3</td>
+                <td>audio/mpeg</td>
+            </tr>
+            <tr>
+                <td>OGG</td>
+                <td>audio/ogg</td>
+            </tr>
+            <tr>
+                <td>WAV</td>
+                <td>audio/wav</td>
+            </tr>
+        </table>
+
+
+        <h2>Audio HTML - Metode, Properti, dan Peristiwa</h2>
+        <p>DOM HTML mendefinisikan metode, properti, dan peristiwa untuk <b>< audio ></b> elemen. <br>
+        Ini memungkinkan anda memuat, memutar, dan menjeda audio, serta mengatur durasi dan volume. <br>
+        Ada juga peristiwa DOM yang dapat memberitahukan anda saat audio mulai diputar, dijeda, dll <br></p>
+
+
+        <h2>Tag Audio HTML</h2>
+        <table>
+            <tr>
+                <th>Tag</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td> < audio > </td>
+                <td> Menentukan content audio </td>
+            </tr>
+            <tr>
+                <td> < source > </td>
+                <td>Menentukan beberapa sumber media untuk elemen media, seperti < video > dan < audio ></td>
+            </tr>
+        </table>
     </body>
 </html>
