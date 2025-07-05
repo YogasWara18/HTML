@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML YOUTUBE VIDEOS</title>
+</head>
+<body>
+
+    <h1>VIDEO HTML YOUTUBE</h1>
+
+    <p>Cara termudah unutk memutar video dalam HTML adalah dengan menggunakan YouTube. </p>
+    
+    <h2>Kesulitan dengan Format Video?</h2>
+    <p>Mengonversi video ke format lain bisa jadi sulit memakan waktu. <br>
+    Solusi yang lebih mudah adalah membiarkan YouTube memutar video dihalaman web Anda.
+    </p>
+
+    <h2>ID Video YouTube</h2>
+    <p>YouTube akan menampilkan id ( seperti tgbNymZ7vqY ), saat Anda menyimpan ( atau memutar ) video. <br>
+    Anda dapat menggunakan id ini, dan merujuk ke video anda dalam kode HTML.
+    </p>
+
+    <h2>Memutar Video Youtube dalam HTML</h2>
+    <p>Untuk memutar video anda di halaman web, laukan hal berikut :</p>
+    <ul>
+        <li>Unggah video ke YouTube</li>
+        <li>Catat ID videonya</li>
+        <li>Tentukan <b>< iframe ></b> elemen dihalaman web anda</li>
+        <li>Biarkan <b>src</b> atribut menunjuk ke URL video</li>
+        <li>Gunakan atribut <b> width </b> dan <b> height </b> untuk menentukan dimensi pemain</li>
+        <li>Tambahkan parameter lain ke URL</li>
+    </ul>
+    <p>Contoh</p>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+
+    
+    <h2>Putar Otomatis + Bisukan YouTube</h2>
+    <p>Anda dapat membiarkan video anda mulai diputar secara otomatis saat pengguna mengunjungi halaman tersebut, dengan menambahkan <b>autoplay=1</b> URL YouTube.Namun, memulai video secara otomatis akan mengganggu pengunjung Anda!</p>
+    <p><b>Catatan:</b> Peramban Cgromium tidak mengizinkan pemutaran otomatis dalam kebanyakan kasus. Namun, pemutaran otomatis tanpa suara selalu diizinkan.</p>
+
+    <p>Tambahkan <b>mute=1</b> setelah <b>autoplay=1</b> untuk membiarkan video Anda mulai diputar secara otomatis ( tetapi tanpa suara ) .</p>
+
+    <p><b>YouTube - Putar Otomatis + Bisukan</b></p>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vq?autoplay=1&mute=1"></iframe>
+
+    <h2>Daftar Putar YouTube</h2>
+    <p>Daftar video yang akan diputar yang dipisahkan koma ( selain URL asli ).</p>
+
+    <h2>Putaran YouTube</h2>
+    <p>Tambahkan <b>playlist=videoID</b> dan <b>loop=1</b> untuk membiarkan video anda berulang selamanya. <br>
+    <b>loop=0</b> (default) - video akan diputar satu kali saja. <br>
+    <b>loop=1</b> - Video akan berulang ( Selamanya ).
+    </p>
+    <h2>YouTube - Putar terus menerus</h2>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1"></iframe>
+
+
+    <h2>Kontrol Youtube</h2>
+    <p>Tambahkan <b>controls=0</b> untuk TIDAK menampilkan kontrol di pemutar video. <br>
+    <b>controls=0</b> - Kontrol pemutar tidak ditampilkan <br>
+    <b>controls=1</b> ( default ) - Kontrol pemutar ditampilkan.
+    </p>
+    <h2>YouTube - Kontrol</h2>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"></iframe>
+</body>
+</html>
