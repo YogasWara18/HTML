@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API GEOLOKASI HTML</title>
+</head>
+<body>
+    
+    <h1>API GEOLOKASI HTML</h1>
+    <p>API Geolokasi digunakan untuk mendapatkan lokasi pengguna saat ini.</p>
+
+    <h2>Temukan Posisi Pengguna</h2>
+    <p>API Geolokasi digunakan untuk mengakses lokasi pengguna saat ini. <br>
+    Karena hal ini dapat membahayakan privasi, lokasi tidak tersedia kecuali pengguna menyetujui.
+    </p>
+
+    <p><b>Catatan : </b> API Geolokasi hanya tersedia pada konteks aman seperti HTTPS.</p> 
+    <p><b>Kiat :</b> API Geolokasi paling akurat untuk perangkat dengan GPS, seperti telepon pintar atau jam tangan pintar.</p>
+
+    <h2>Dukungan Peramban</h2>
+    <p>Angka dalam tabel menunjukkan versi browser pertama yang sepenuhnya mendukung Geolokasi</p>
+
+
+    <h2>Menggunakan API Geolokasi HTML</h2>
+    <p>API Geolokasi diakses melalui panggilan ke <b>navigator.geolocation.</b> Ini akan menyebabkan browser meminta izin kepada pengguna untuk mengakses data lokasi mereka. Jika pengguna menerima, browser akan mencari fungsionalitas terbaik yang tersedia pada perangkat untuk mengakses informasi ini ( misalnya GPS ). <br><br>
+    Metode ini <b>getCurrentPosition()</b> digunakan untuk mengembalikan lokasi pengguna saat ini. <br><br>
+    Contoh berikut mengmbalikan lintang dan bujur lokasi pengguna saat ini : 
+    </p>
+    <p>Contoh :</p>
+    <h1>HTML Geolocation</h1>
+    <p>Click the button to get your coordinates.</p>
+
+    <button onclick="getLocation()">Try It</button>
+
+    <p id="demo"></p>
+
+    <script>
+        const x = document.getElementById("demo");
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(success, error);
+            } else {
+                x.innerHTML = "Geolocation in not supported by this browser.";
+            }
+        }
+        function success(position) {
+            x.innerHTML = "Latitude: "+ position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+        }
+        function error() {
+            alert("Sorry, no position available.");
+        }
+    </script>
+
+</body>
+</html>
